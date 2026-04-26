@@ -14,7 +14,7 @@ h2 {
 	font-size: 24px;
 }
 
-hr + .sl-heading-wrapper {
+.sl-heading-wrapper {
 	margin-top: 0.75rem;
 }
 
