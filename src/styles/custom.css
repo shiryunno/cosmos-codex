@@ -1,0 +1,204 @@
+/* ─── Tipografia ────────────────────────────────────────────────────────── */
+
+:root {
+	--sl-font:
+		'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	--sl-font-system-mono:
+		'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+		monospace;
+}
+
+h1,
+h2,
+h3,
+.site-title,
+.sl-heading-wrapper > :is(h1, h2, h3) {
+	font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+	font-weight: 600;
+	letter-spacing: 0.01em;
+}
+
+h1 {
+	font-weight: 700;
+}
+
+/* ─── Paleta — Necrose e Brasa (dark / canônico) ────────────────────────── */
+
+:root {
+	/* Brasa (acento âmbar) */
+	--sl-color-accent-low: #3a2a1c;
+	--sl-color-accent: #d68a52;
+	--sl-color-accent-high: #c97e44;
+
+	/* Branco-osso frio */
+	--sl-color-white: #f2eee6;
+	--sl-color-gray-1: #e2dccf;
+	--sl-color-gray-2: #c4bdac;
+	--sl-color-gray-3: #8a8398;
+	--sl-color-gray-4: #555068;
+	--sl-color-gray-5: #232038;
+	--sl-color-gray-6: #161430;
+
+	/* Superfícies — azul-violáceo profundo */
+	--sl-color-black: #0c0a1f;
+	--sl-color-bg: #0c0a1f;
+	--sl-color-bg-nav: #08071a;
+	--sl-color-bg-sidebar: #08071a;
+	--sl-color-bg-inline-code: #161430;
+
+	/* Hairlines */
+	--sl-color-hairline-light: #2a264a;
+	--sl-color-hairline: #2a264a;
+	--sl-color-hairline-shade: #1d1a3a;
+
+	/* Texto */
+	--sl-color-text: #f2eee6;
+	--sl-color-text-accent: #d68a52;
+	--sl-color-text-invert: #0c0a1f;
+}
+
+/* ─── Paleta — light mode (fallback) ────────────────────────────────────── */
+
+/* ─── Links no conteúdo ─────────────────────────────────────────────────── */
+
+.sl-markdown-content a {
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.sl-markdown-content a:hover {
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+
+/* ─── Scrollbar — tema Necrose e Brasa ──────────────────────────────────── */
+
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--sl-color-gray-4) transparent;
+}
+
+/* WebKit / Chromium */
+*::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+	background: var(--sl-color-bg-nav);
+}
+
+*::-webkit-scrollbar-thumb {
+	background: var(--sl-color-gray-5);
+	border: 2px solid var(--sl-color-bg-nav);
+	border-radius: 6px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background: var(--sl-color-accent-high);
+}
+
+*::-webkit-scrollbar-corner {
+	background: var(--sl-color-bg-nav);
+}
+
+/* ─── Céu estrelado de fundo ────────────────────────────────────────────── */
+
+.main-frame {
+	position: relative;
+	isolation: isolate;
+}
+
+.main-frame::before,
+.main-frame::after {
+	content: '';
+	position: fixed;
+	pointer-events: none;
+	z-index: -1;
+	inset: 0;
+	background-repeat: repeat;
+}
+
+/* Camada distante — estrelas médias, mais densas, brilho frio */
+.main-frame::before {
+	background-image:
+		radial-gradient(2.5px 2.5px at 23px 47px, rgba(226, 220, 207, 0.95), transparent 65%),
+		radial-gradient(2px 2px at 87px 19px, rgba(200, 195, 220, 0.85), transparent 65%),
+		radial-gradient(2.5px 2.5px at 142px 113px, rgba(226, 220, 207, 0.75), transparent 65%),
+		radial-gradient(2px 2px at 211px 67px, rgba(180, 175, 210, 0.9), transparent 65%),
+		radial-gradient(2.5px 2.5px at 53px 181px, rgba(226, 220, 207, 0.65), transparent 65%),
+		radial-gradient(2px 2px at 173px 223px, rgba(214, 138, 82, 0.7), transparent 65%),
+		radial-gradient(2.5px 2.5px at 251px 151px, rgba(226, 220, 207, 0.85), transparent 65%),
+		radial-gradient(2px 2px at 109px 271px, rgba(200, 195, 220, 0.75), transparent 65%),
+		radial-gradient(2.5px 2.5px at 31px 297px, rgba(226, 220, 207, 0.6), transparent 65%),
+		radial-gradient(2px 2px at 233px 307px, rgba(180, 175, 210, 0.8), transparent 65%);
+	background-size: 320px 340px;
+	animation: pulse-far 4.5s ease-in-out infinite;
+}
+
+/* Camada próxima — estrelas maiores, esparsas, com brilho mais quente */
+.main-frame::after {
+	background-image:
+		radial-gradient(3.5px 3.5px at 67px 89px, rgba(242, 238, 230, 1), transparent 65%),
+		radial-gradient(3px 3px at 213px 41px, rgba(214, 138, 82, 0.95), transparent 65%),
+		radial-gradient(3.5px 3.5px at 97px 251px, rgba(242, 238, 230, 0.95), transparent 65%),
+		radial-gradient(3px 3px at 311px 173px, rgba(200, 195, 220, 1), transparent 65%),
+		radial-gradient(3.5px 3.5px at 41px 391px, rgba(214, 138, 82, 0.85), transparent 65%),
+		radial-gradient(3px 3px at 257px 361px, rgba(242, 238, 230, 0.9), transparent 65%);
+	background-size: 420px 460px;
+	background-position: 80px 120px;
+	animation: pulse-near 3s ease-in-out infinite;
+}
+
+@keyframes pulse-far {
+	0%, 100% { opacity: 0.3; }
+	50% { opacity: 1; }
+}
+
+@keyframes pulse-near {
+	0%, 100% { opacity: 0.4; }
+	35% { opacity: 1; }
+	70% { opacity: 0.25; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.main-frame::before,
+	.main-frame::after {
+		animation: none;
+	}
+}
+
+:root[data-theme='light'] .main-frame::before,
+:root[data-theme='light'] .main-frame::after {
+	display: none;
+}
+
+:root[data-theme='light'] {
+	--sl-color-accent-low: #f0d9c2;
+	--sl-color-accent: #a85f2e;
+	--sl-color-accent-high: #7c3f17;
+
+	--sl-color-white: #1a2326;
+	--sl-color-gray-1: #2a3539;
+	--sl-color-gray-2: #44545a;
+	--sl-color-gray-3: #6b7a7e;
+	--sl-color-gray-4: #97a2a5;
+	--sl-color-gray-5: #c8ccc7;
+	--sl-color-gray-6: #e4ddcd;
+	--sl-color-gray-7: #efe8d8;
+
+	--sl-color-black: #f5efe2;
+	--sl-color-bg: #f5efe2;
+	--sl-color-bg-nav: #ebe3d2;
+	--sl-color-bg-sidebar: #ebe3d2;
+	--sl-color-bg-inline-code: #e4ddcd;
+
+	--sl-color-hairline-light: #d6cdb8;
+	--sl-color-hairline: #c8bfa9;
+	--sl-color-hairline-shade: #d6cdb8;
+
+	--sl-color-text: #1a2326;
+	--sl-color-text-accent: #a85f2e;
+	--sl-color-text-invert: #f5efe2;
+}

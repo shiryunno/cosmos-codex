@@ -1,14 +1,4 @@
-/* ─── Fonts ─────────────────────────────────────────────────────────────── */
-
-:root {
-	--sl-font: 'Roboto', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6,
-.site-title,
-.sidebar-content .group-label {
-	font-family: 'Cinzel', serif;
-}
+/* ─── Layout helpers ────────────────────────────────────────────────────── */
 
 h2 {
 	font-size: 24px;

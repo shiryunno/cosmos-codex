@@ -5,7 +5,8 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'Cosmos Codex',
+			title: 'Códices de Memórias',
+			description: 'Compêndio de consulta para a campanha — raças, equipamento, mechas e naves no fim das estrelas.',
 			locales: {
 				root: {
 					label: 'Português',
@@ -41,7 +42,7 @@ export default defineConfig({
 					autogenerate: { directory: 'equipamento' },
 				},
 			],
-			customCss: ['./src/styles/global.css'],
+			customCss: ['./src/styles/custom.css', './src/styles/global.css'],
 			head: [
 				{
 					tag: 'link',
@@ -55,7 +56,7 @@ export default defineConfig({
 					tag: 'link',
 					attrs: {
 						rel: 'stylesheet',
-						href: 'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;1,14..32,400&display=swap',
+						href: 'https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap',
 					},
 				},
 			],
