@@ -28,14 +28,15 @@ Conteúdo de jogo (lore, regras, stats) **nunca deve ser inventado** — sempre 
 │   │   ├── docs/              # páginas .md/.mdx do site
 │   │   └── ...                # outras collections (a criar conforme necessário)
 │   ├── content.config.ts      # schemas das collections
-│   ├── styles/                # CSS customizado
-│   └── components/            # overrides do Starlight (quando necessário)
+│   ├── styles/
+│   │   └── global.css         # estilos globais do projeto
+│   └── components/            # componentes Astro reutilizáveis e overrides do Starlight
 ├── public/                    # assets estáticos (imagens, ícones)
 ├── astro.config.mjs           # configuração principal
 └── CLAUDE.md                  # este arquivo
 ```
 
-Páginas do site são definidas por arquivos em `src/content/docs/`. O roteamento é file-based: `src/content/docs/racas/aesir.md` vira `/racas/aesir/`.
+Páginas do site são definidas por arquivos em `src/content/docs/`. O roteamento é file-based: `src/content/docs/racas/aesir.mdx` vira `/racas/aesir/`.
 
 ## Convenções de conteúdo
 
@@ -48,7 +49,7 @@ Páginas do site são definidas por arquivos em `src/content/docs/`. O roteament
 
 ### Frontmatter obrigatório
 
-Todo arquivo `.md` em `src/content/docs/` precisa ter ao menos:
+Todo arquivo em `src/content/docs/` precisa ter ao menos:
 
 ```yaml
 ---
@@ -58,6 +59,8 @@ description: Resumo curto de uma linha (vai pra meta tags e SEO interno).
 ```
 
 Outros campos do Starlight (`sidebar`, `template`, `tableOfContents`, `editUrl`) só quando fazem diferença real.
+
+Use `.md` para páginas de conteúdo simples. Use `.mdx` quando a página importa componentes Astro — como as fichas de raça, que usam `TracosRaciais.astro`.
 
 ### Linguagem temática
 
@@ -80,7 +83,7 @@ A medida que o site cresce, novos tipos de conteúdo (raças, armas, mechas, fac
 
 Tipos planejados (a implementar conforme demanda):
 
-- `racas` — fichas de raça jogável
+- `racas` — fichas de raça jogável. **Implementado:** páginas `.mdx` em `docs/racas/`, usando `docsSchema` estendido com campo `tracos` (schema `tracosRaciais` em `content.config.ts`). Traços mecânicos ficam no frontmatter; lore fica no corpo do `.mdx`. Componente `TracosRaciais.astro` renderiza os traços.
 - `faccoes` — facções e grupos
 - `armas` — catálogo de armamento por tier
 - `armaduras` — catálogo de armaduras
@@ -96,7 +99,7 @@ Tipos planejados (a implementar conforme demanda):
 A customização visual será feita em fases:
 
 1. Paleta cósmica melancólica (escuros frios, acentos quentes pontuais) via CSS custom properties do Starlight
-2. Fontes (a decidir — provavelmente uma serif evocativa pro título e uma sans clara pro corpo)
+2. **Fontes — implementado:** Cinzel (headings, SIL OFL) + Roboto (corpo, SIL OFL), carregadas via Google Fonts no `head` do `astro.config.mjs`. Estilos globais em `src/styles/global.css`.
 3. Componentes específicos do cenário só se a navegação padrão do Starlight não der conta
 
 **Não fazer overhaul visual sem discussão prévia.** Customização é progressiva e seletiva.
