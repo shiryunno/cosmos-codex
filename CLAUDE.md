@@ -6,7 +6,7 @@ Contexto persistente para Claude Code neste projeto. Leia este arquivo antes de 
 
 Este é um **site estático de consulta para uma campanha de RPG de mesa** (D&D 5e, mescla das edições 2014/2024 com homebrew). A audiência são os jogadores da mesa — não é um produto comercial, não é documentação técnica, não é um SaaS. É uma wiki temática que precisa ser fácil de consultar durante a sessão (incluindo no celular).
 
-O cenário é **horror cósmico melancólico** ambientado no espaço pós-apocalíptico. Referências estéticas: Spelljammer, Dark Souls, Neon Genesis Evangelion, All Tomorrows. O conteúdo já existe em documentos de design separados (raças, facções, equipamento, mechas, naves, etc.) e está sendo migrado pra cá de forma incremental.
+O cenário é **horror cósmico melancólico** ambientado no espaço pós-apocalíptico. Referências estéticas: Spelljammer, Dark Souls, Neon Genesis Evangelion, All Tomorrows. O conteúdo já existe em documentos de design separados (raças, equipamento, mechas, naves, etc.) e está sendo migrado pra cá de forma incremental.
 
 Conteúdo de jogo (lore, regras, stats) **nunca deve ser inventado** — sempre vem dos documentos de design ou de decisão explícita do usuário em conversa.
 
@@ -79,12 +79,11 @@ Melancólico, denso, evocativo onde couber. Mas a função primária é consulta
 
 ## Content Collections
 
-A medida que o site cresce, novos tipos de conteúdo (raças, armas, mechas, facções, deuses, itens mágicos) viram **collections tipadas** em `src/content.config.ts`. Schema-first: antes de criar várias páginas de um tipo novo, definir o schema com Zod e validar.
+A medida que o site cresce, novos tipos de conteúdo (raças, armas, mechas, deuses, itens mágicos) viram **collections tipadas** em `src/content.config.ts`. Schema-first: antes de criar várias páginas de um tipo novo, definir o schema com Zod e validar.
 
 Tipos planejados (a implementar conforme demanda):
 
 - `racas` — fichas de raça jogável. **Implementado:** páginas `.mdx` em `docs/racas/`, usando `docsSchema` estendido com campo `tracos` (schema `tracosRaciais` em `content.config.ts`). Traços mecânicos ficam no frontmatter; lore fica no corpo do `.mdx`. Componente `TracosRaciais.astro` renderiza os traços.
-- `faccoes` — facções e grupos
 - `armas` — catálogo de armamento por tier
 - `armaduras` — catálogo de armaduras
 - `mechas` — peças e chassis

@@ -18,10 +18,6 @@ export default defineConfig({
 					autogenerate: { directory: 'racas' },
 				},
 				{
-					label: 'Facções',
-					autogenerate: { directory: 'faccoes' },
-				},
-				{
 					label: 'Mechas',
 					items: [
 						{ label: 'Visão geral', link: 'mechas' },
