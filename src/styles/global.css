@@ -18,6 +18,17 @@ hr + .sl-heading-wrapper {
 	margin-top: 0.75rem;
 }
 
+/* ─── Card grid — center last card when alone in a row ──────────────────── */
+
+@media (min-width: 50rem) {
+	.card-grid > :last-child:nth-child(odd) {
+		grid-column: 1 / -1;
+		max-width: calc(50% - 0.75rem);
+		margin-inline: auto;
+		width: 100%;
+	}
+}
+
 /* ─── Racial traits — fixed fields ──────────────────────────────────────── */
 
 .tracos-base {

@@ -17,6 +17,22 @@ export default defineConfig({
 					label: 'Raças',
 					autogenerate: { directory: 'racas' },
 				},
+				{
+					label: 'Facções',
+					autogenerate: { directory: 'faccoes' },
+				},
+				{
+					label: 'Mechas',
+					autogenerate: { directory: 'mechas' },
+				},
+				{
+					label: 'Naves',
+					autogenerate: { directory: 'naves' },
+				},
+				{
+					label: 'Equipamento',
+					autogenerate: { directory: 'equipamento' },
+				},
 			],
 			customCss: ['./src/styles/global.css'],
 			head: [
