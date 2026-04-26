@@ -1,0 +1,45 @@
+/* ─── Fonts ─────────────────────────────────────────────────────────────── */
+
+:root {
+	--sl-font: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.sidebar-content .group-label {
+	font-family: 'Cinzel', serif;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+/* ─── Racial traits — fixed fields ──────────────────────────────────────── */
+
+.tracos-base {
+	display: block;
+	gap: 0.2rem 1.25rem;
+	margin-bottom: 1.5rem;
+}
+
+.tracos-base dt {
+	font-weight: 600;
+	color: var(--sl-color-white);
+}
+
+.tracos-base dd {
+	margin: 0;
+	color: var(--sl-color-gray-2);
+}
+
+/* ─── Racial traits — ability cards ─────────────────────────────────────── */
+
+.habilidade {
+	border-left: 2px solid var(--sl-color-accent);
+	padding: 0.4rem 0.9rem;
+	margin: 0.6rem 0;
+}
+
+.habilidade strong {
+	color: var(--sl-color-white);
+}

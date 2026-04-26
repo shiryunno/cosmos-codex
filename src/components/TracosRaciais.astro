@@ -17,7 +17,7 @@ interface Props {
 const { tracos } = Astro.props;
 ---
 
-<section class="tracos-raciais">
+<section>
 	<h2>Traços Raciais</h2>
 
 	<dl class="tracos-base">
@@ -39,7 +39,7 @@ const { tracos } = Astro.props;
 		</div>
 	</dl>
 
-	<div class="habilidades">
+	<div>
 		{tracos.habilidades.map((h) => (
 			<div class="habilidade">
 				<strong>{h.nome}.</strong> {h.descricao}
