@@ -1,0 +1,64 @@
+---
+interface Item {
+	title: string;
+	description: string;
+}
+
+interface Props {
+	propriedades?: Item[];
+	custos?: Item[];
+}
+
+const { propriedades, custos } = Astro.props;
+
+function renderInline(text: string): string {
+	return text
+		.trim()
+		.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+		.replace(/\*(.*?)\*/g, '<em>$1</em>')
+		.replace(/`(.*?)`/g, '<code>$1</code>');
+}
+---
+
+<section class="peca-mecha">
+	{propriedades && propriedades.length > 0 && (
+		<div class="mecha-bloco">
+			{propriedades.map((p) => (
+				<p class="mecha-item">
+					<strong>Propriedade — {p.title}.</strong>{' '}
+					<span set:html={renderInline(p.description)} />
+				</p>
+			))}
+		</div>
+	)}
+
+	{custos && custos.length > 0 && (
+		<div class="mecha-bloco">
+			{custos.map((c) => (
+				<p class="mecha-item">
+					<strong>Custo — {c.title}.</strong>{' '}
+					<span set:html={renderInline(c.description)} />
+				</p>
+			))}
+		</div>
+	)}
+</section>
+
+<style>
+	.peca-mecha {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.mecha-bloco {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.mecha-item {
+		margin: 0;
+		line-height: 1.6;
+	}
+</style>

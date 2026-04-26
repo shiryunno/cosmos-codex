@@ -1,4 +1,5 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { z } from 'zod';
 import { docsLoader } from '@astrojs/starlight/loaders';
 import { docsSchema } from '@astrojs/starlight/schema';
 
@@ -13,9 +14,20 @@ const tracosRaciais = z.object({
 	})),
 });
 
+const mechaItem = z.array(z.object({
+	title: z.string(),
+	description: z.string(),
+}));
+
 export const collections = {
 	docs: defineCollection({
 		loader: docsLoader(),
-		schema: docsSchema({ extend: z.object({ tracos: tracosRaciais.optional() }) }),
+		schema: docsSchema({
+			extend: z.object({
+				tracos: tracosRaciais.optional(),
+				propriedades: mechaItem.optional(),
+				custos: mechaItem.optional(),
+			}),
+		}),
 	}),
 };

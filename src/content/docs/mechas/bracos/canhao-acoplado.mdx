@@ -1,9 +1,21 @@
-#### Canhão Acoplado
+---
+title: Canhão Acoplado
+description: Arma pesada de alto dano com disparo único por turno, sujeita a recarga aleatória e ângulo morto em corpo a corpo.
+propriedades:
+  - title: Arma Pesada
+    description: |
+      O Canhão dispara **uma vez por turno**, independente de quantos ataques o piloto tenha disponíveis. Extra Attack não permite múltiplos disparos.
+custos:
+  - title: Recarga 3-6
+    description: |
+      Após disparar, o Canhão entra em recarga. No início de cada turno subsequente do piloto, role 1d6; em **3, 4, 5 ou 6** o Canhão está pronto novamente. Em **1 ou 2** continua recarregando. O primeiro disparo de cada combate não requer recarga — o Canhão começa carregado.
+  - title: Alcance Mínimo
+    description: |
+      O Canhão não dispara em corpo a corpo. Alvos adjacentes ao mecha estão em ângulo morto; atacá-los exige reposicionar o mecha primeiro (custa movimento).
+---
 
-**Propriedade — Arma Pesada.** O Canhão dispara **uma vez por turno**, independente de quantos ataques o piloto tenha disponíveis. Extra Attack não permite múltiplos disparos.
+import PecaMecha from '../../../../components/PecaMecha.astro';
 
-**Custo — Recarga 3-6.** Após disparar, o Canhão entra em recarga. No início de cada turno subsequente do piloto, role 1d6; em **3, 4, 5 ou 6** o Canhão está pronto novamente. Em **1 ou 2** continua recarregando. O primeiro disparo de cada combate não requer recarga — o Canhão começa carregado.
-
-**Custo — Alcance Mínimo.** O Canhão não dispara em corpo a corpo. Alvos adjacentes ao mecha estão em ângulo morto; atacá-los exige reposicionar o mecha primeiro (custa movimento).
+<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />
 
 > O ruído que um Canhão Acoplado faz ao disparar ainda reverbera nos corredores das naves abandonadas. Alguns pilotos dizem que o canhão lembra o som — e recusa disparar perto de certos destroços, como quem evita lugares onde já matou demais.

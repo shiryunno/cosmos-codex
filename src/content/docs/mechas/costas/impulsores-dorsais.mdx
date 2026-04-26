@@ -1,14 +1,24 @@
-#### Impulsores Dorsais
+---
+title: Impulsores Dorsais
+description: Propulsão essencial para vácuo e dash horizontal planetário, ocupando o slot de costas integralmente.
+propriedades:
+  - title: Propulsão em Vácuo
+    description: |
+      Em ambientes sem gravidade ou atmosfera (espaço aberto, Vazio, certas ruínas orbitais), os Impulsores são a única forma de movimentação autônoma do mecha. Velocidade em vácuo: **12m em qualquer direção** (incluindo vertical), todo turno, sem custo de ação.
+  - title: Dash Planetário
+    description: |
+      Em ambiente com gravidade, como ação, o piloto executa um dash horizontal de até **18m em linha reta**. Não provoca ataques de oportunidade. Uso: **uma vez por combate** em ambiente planetário (em vácuo, a movimentação é contínua e sem limite de uso).
+custos:
+  - title: Sem Outra Função Dorsal
+    description: |
+      Ocupa o slot de Costas integralmente. Sem Escudo pra defesa, sem Mísseis pra pressão, sem Cápsula pra fuga do corpo. A única rede de segurança é a mobilidade.
+  - title: Inércia Sem Impulsor
+    description: |
+      Mechas sem Impulsores Dorsais ficam **inertes em vácuo** — só podem se mover agarrando superfícies, sendo rebocados, ou aproveitando campos gravitacionais externos. Isso não é penalidade dos Impulsores, é contraste: pilotos que escolhem outro módulo aceitam depender de ambiente controlado. Crítico destruindo os Impulsores em vácuo deixa o mecha à deriva — recuperação exige aliado ou gancho de emergência.
+---
 
-**Propriedade — Propulsão em Vácuo.** Em ambientes sem gravidade ou atmosfera (espaço aberto, Vazio, certas ruínas orbitais), os Impulsores são a única forma de movimentação autônoma do mecha. Velocidade em vácuo: **12m em qualquer direção** (incluindo vertical), todo turno,
-sem custo de ação.
+import PecaMecha from '../../../../components/PecaMecha.astro';
 
-**Propriedade — Dash Planetário.** Em ambiente com gravidade, como ação, o piloto executa um dash horizontal de até **18m em linha reta**. Não provoca ataques de oportunidade. Uso: **uma vez por combate** em ambiente planetário (em vácuo, a movimentação é contínua e sem limite de
-uso).
+<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />
 
-**Custo — Sem Outra Função Dorsal.** Ocupa o slot de Costas integralmente. Sem Escudo pra defesa, sem Mísseis pra pressão, sem Cápsula pra fuga do corpo. A única rede de segurança é a mobilidade.
-
-**Custo — Inércia Sem Impulsor.** Mechas sem Impulsores Dorsais ficam **inertes em vácuo** — só podem se mover agarrando superfícies, sendo rebocados, ou aproveitando campos gravitacionais externos. Isso não é penalidade dos Impulsores, é contraste: pilotos que escolhem outro módulo aceitam depender de ambiente controlado. Crítico destruindo os Impulsores em vácuo deixa o mecha à deriva — recuperação exige aliado ou gancho de emergência.
-
-> Os Impulsores ainda funcionam porque foram construídos para falhar em silêncio. Civilizações que morreram em órbita deixaram esses módulos intactos, colados às carcaças que boiam há séculos. Quem recupera um Impulsor está literalmente tomando o que permitia a outro piloto
-> voltar pra casa.
+> Os Impulsores ainda funcionam porque foram construídos para falhar em silêncio. Civilizações que morreram em órbita deixaram esses módulos intactos, colados às carcaças que boiam há séculos. Quem recupera um Impulsor está literalmente tomando o que permitia a outro piloto voltar pra casa.

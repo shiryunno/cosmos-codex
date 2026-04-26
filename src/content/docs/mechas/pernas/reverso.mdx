@@ -1,7 +1,18 @@
-#### Reverso
+---
+title: Reverso
+description: Pernas inversas de alta velocidade com Salto de Boost repetido, mas com CA reduzida e incompatível com chassi Crânio.
+propriedades:
+  - title: Impulso
+    description: |
+      Velocidade 12m. Até **PB vezes por combate**, como ação bônus, o piloto executa um **Salto de Boost**: move-se até 15m em qualquer direção (incluindo vertical), ignorando terreno intermediário e sem provocar ataques de oportunidade.
+custos:
+  - title: Frame Exposto
+    description: |
+      CA do mecha reduzida em 1 enquanto Reverso está equipado. A estrutura invertida expõe articulações que nenhum armamento de casco consegue blindar sem travar o movimento. Não compatível com chassi Crânio — a massa derruba o frame no primeiro passo.
+---
 
-**Propriedade — Impulso.** Velocidade 12m. Até **PB vezes por combate**, como ação bônus, o piloto executa um **Salto de Boost**: move-se até 15m em qualquer direção (incluindo vertical), ignorando terreno intermediário e sem provocar ataques de oportunidade.
+import PecaMecha from '../../../../components/PecaMecha.astro';
 
-**Custo — Frame Exposto.** CA do mecha reduzida em 1 enquanto Reverso está equipado. A estrutura invertida expõe articulações que nenhum armamento de casco consegue blindar sem travar o movimento. Não compatível com chassi Crânio — a massa derruba o frame no primeiro passo.
+<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />
 
 > Reverso é arquitetura de guerra rápida, construída por civilizações que esperavam ganhar cedo. Ganharam ou perderam antes de a tecnologia amadurecer. Os exemplares remanescentes ainda são os mecanismos mais ágeis do universo moribundo — e os mais fáceis de partir ao meio.

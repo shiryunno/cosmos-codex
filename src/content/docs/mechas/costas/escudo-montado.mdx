@@ -1,10 +1,21 @@
-#### Escudo Montado
+---
+title: Escudo Montado
+description: "+2 CA permanente no slot de costas, destruível por crítico e incompatível com qualquer outro módulo dorsal."
+propriedades:
+  - title: Proteção Reforçada
+    description: |
+      **+2 CA** enquanto equipado. O escudo é parte permanente da silhueta do mecha; não exige ação pra ser ativado, não consome recurso.
+custos:
+  - title: Quebra Crítica
+    description: |
+      O Escudo só é destruído via resultado 5 da tabela de crítico. Quando destruído, o bônus de +2 CA é removido imediatamente e o escudo fica inerte pelo resto do combate. Reparo requer downtime (Ferramentas de Ferreiro, tempo a critério do Mestre).
+  - title: Slot Fechado
+    description: |
+      O Escudo ocupa Costas integralmente. Sem Mísseis pra pressão ofensiva, sem Ejeção pra emergência, sem Impulsores pra vácuo, sem Bateria pra autonomia.
+---
 
-**Propriedade — Proteção Reforçada.** **+2 CA** enquanto equipado. O escudo é parte permanente da silhueta do mecha; não exige ação pra ser ativado, não consome recurso.
+import PecaMecha from '../../../../components/PecaMecha.astro';
 
-**Custo — Quebra Crítica.** O Escudo só é destruído via resultado 5 da tabela de crítico. Quando destruído, o bônus de +2 CA é removido imediatamente e o escudo fica inerte pelo resto do combate. Reparo requer downtime (Ferramentas de Ferreiro, tempo a critério do Mestre).
+<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />
 
-**Custo — Slot Fechado.** O Escudo ocupa Costas integralmente. Sem Mísseis pra pressão ofensiva, sem Ejeção pra emergência, sem Impulsores pra vácuo, sem Bateria pra autonomia.
-
-> Escudos Montados foram removidos dos mechas das frotas mais antigas porque pesavam mais do que protegiam contra o armamento novo. Os exemplares remanescentes pertenceram a pilotos teimosos que se recusaram a abandonar a arquitetura do mestre deles. Estão marcados
-> com símbolos que os engenheiros não sabem remover.
+> Escudos Montados foram removidos dos mechas das frotas mais antigas porque pesavam mais do que protegiam contra o armamento novo. Os exemplares remanescentes pertenceram a pilotos teimosos que se recusaram a abandonar a arquitetura do mestre deles. Estão marcados com símbolos que os engenheiros não sabem remover.
