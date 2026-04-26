@@ -1,0 +1,49 @@
+---
+interface Habilidade {
+	nome: string;
+	descricao: string;
+}
+
+interface Props {
+	tracos: {
+		idade: string;
+		tamanho: string;
+		deslocamento: number;
+		idiomas: string[];
+		habilidades: Habilidade[];
+	};
+}
+
+const { tracos } = Astro.props;
+---
+
+<section class="tracos-raciais">
+	<h2>Traços Raciais</h2>
+
+	<dl class="tracos-base">
+		<div>
+			<dt>Idade</dt>
+			<dd>{tracos.idade}</dd>
+		</div>
+		<div>
+			<dt>Tamanho</dt>
+			<dd>{tracos.tamanho}</dd>
+		</div>
+		<div>
+			<dt>Deslocamento</dt>
+			<dd>{tracos.deslocamento} metros</dd>
+		</div>
+		<div>
+			<dt>Idiomas</dt>
+			<dd>{tracos.idiomas.join(', ')}</dd>
+		</div>
+	</dl>
+
+	<div class="habilidades">
+		{tracos.habilidades.map((h) => (
+			<div class="habilidade">
+				<strong>{h.nome}.</strong> {h.descricao}
+			</div>
+		))}
+	</div>
+</section>
