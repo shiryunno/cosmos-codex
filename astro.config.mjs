@@ -6,7 +6,12 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Cosmos Codex',
-			defaultLocale: 'pt-BR',
+			locales: {
+				root: {
+					label: 'Português',
+					lang: 'pt-BR',
+				},
+			},
 			sidebar: [
 				{
 					label: 'Raças',
