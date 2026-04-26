@@ -9,3 +9,7 @@ As espécies que sobreviveram ao Abismo carregam em seus corpos e culturas as ci
 ## Espécies disponíveis
 
 - [Aesir](/racas/aesir/) — humanoides de herança gigante, forjados no frio perpétuo dos mundos gelados.
+- [Anão da Poeira Estelar](/racas/anao-da-poeira-estelar/) — forjadores de ligas impossíveis, moldados por gerações de trabalho no limiar de estrelas moribundas.
+- [Atromus](/racas/atromus/) — construtos sencientes que transcenderam os limites de sua programação e despertaram para a consciência.
+- [Kimurokami](/racas/kimurokami/) — seres nascidos apenas quando uma estrela morre, carregando um fragmento irrepetível de luz cósmica.
+- [Raptor Estelar](/racas/raptor-estelar/) — predadores alados que se adaptaram ao vácuo do espaço, surfando as correntes residuais da Yggdrasil.
