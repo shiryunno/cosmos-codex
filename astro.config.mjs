@@ -23,11 +23,22 @@ export default defineConfig({
 				},
 				{
 					label: 'Mechas',
-					autogenerate: { directory: 'mechas' },
+					items: [
+						{ label: 'Visão geral', link: 'mechas' },
+						{ label: 'Chassis', autogenerate: { directory: 'mechas/chassis' } },
+						{ label: 'Braços', autogenerate: { directory: 'mechas/bracos' } },
+						{ label: 'Costas', autogenerate: { directory: 'mechas/costas' } },
+						{ label: 'Pernas', autogenerate: { directory: 'mechas/pernas' } },
+						{ label: 'Geração', autogenerate: { directory: 'mechas/geracao' } },
+					],
 				},
 				{
 					label: 'Naves',
-					autogenerate: { directory: 'naves' },
+					items: [
+						{ label: 'Visão geral', link: 'naves' },
+						{ label: 'Classes', autogenerate: { directory: 'naves/classes' } },
+						{ label: 'Módulos', autogenerate: { directory: 'naves/modulos' } },
+					],
 				},
 				{
 					label: 'Equipamento',
