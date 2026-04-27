@@ -1,23 +1,27 @@
 ---
-title: "Arcada (Médio)"
-description: Chassi de frota versátil, compatível com todas as pernas e com facilidade de integração e reparo.
+title: "Arcada"
+description: Chassi versátil e compatível com todas as pernas.
 propriedades:
   - title: Modelo de Frota
     description: |
-      Componentes T1 instalam-se sem teste de integração (regras de integração na Seção 7). Quando o piloto realiza Reparo de Sistema em campo (Sec. 4), o tempo de reparo é reduzido em 1 ação.
+      Componentes T1 podem ser instalados sem a necessidade de um teste de integração.
 custos:
   - title: Sem Especialização
     description: |
-      Não tem vantagem estrutural contra categorias específicas de dano nem em saves. É o meio do caminho: nem escapa como leve, nem aguenta como pesado.
+      Não tem vantagens nem desvantagens - é o meio termo.
 ---
 
 import PecaMecha from '../../../../components/PecaMecha.astro';
 
+O cavalo de batalha das frotas extintas. Mais Arcadas foram construídas do que toda a tripulação restante do universo poderia pilotar. Encontram-se aos milhares enferrujando em silos esquecidos — algumas ainda com a unidade de série pintada no peito.
+
+---
+
 <PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />
+
+---
 
 - **HP base:** 50 + (PB × 12)
 - **CA base:** 15
 - **Tamanho:** Grande
 - **Pernas compatíveis:** todas
-
-> O cavalo de batalha das frotas extintas. Mais Arcadas foram construídas do que toda a tripulação restante do universo poderia pilotar. Encontram-se aos milhares enferrujando em silos esquecidos — algumas ainda com a unidade de série pintada no peito.

@@ -1,21 +1,19 @@
 ---
 title: Mísseis Acoplados
-description: Bateria de mísseis com PB cargas por combate e disparo como ação bônus, sem blindagem secundária no slot dorsal.
+description: Bateria com cargas por combate e disparo como ação bônus.
 propriedades:
   - title: Salva Adicional
     description: |
-      Como ação bônus, o piloto dispara um míssil contra um alvo dentro de 36m (médio). Teste de ataque usando Destreza + PB. Dano: **2d8 força**.
+      Como ação bônus, o piloto dispara um míssil contra um alvo dentro de 36m. O teste do ataque utiliza o Modificador de Destreza mais o Bônus de Proficiência do piloto como adicionais. Dano: **2d8 de força**.
   - title: Munição Finita
     description: |
-      A bateria de mísseis contém **PB cargas por combate**. Nível 10 = 4 mísseis. Cargas não gastas ao fim do combate são perdidas (o dispensador recalibra, não acumula). Descanso longo recarrega a bateria completa.
-custos:
-  - title: Sem Blindagem Secundária
-    description: |
-      O espaço dos Mísseis substitui qualquer módulo defensivo. O mecha depende exclusivamente da CA do chassi e do módulo de costas. Crítico na tabela (resultado 5) destrói o dispensador; as cargas restantes são perdidas imediatamente.
+      A bateria de mísseis contém cargas equivalentes ao Bônus de Proficiência do piloto por combate. Cargas não gastas ao fim do combate são perdidas - o dispensador recalibra, não acumula.
 ---
 
 import PecaMecha from '../../../../components/PecaMecha.astro';
 
-<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />
+Os Mísseis são relíquia de doutrinas que não existem mais. Fabricados em massa por frotas que acreditavam em vitórias rápidas, encontram-se selados em caixas marcadas com datas que ninguém mais sabe ler. Cada carga disparada é um objeto que não voltará a existir.
 
-> Os Mísseis são relíquia de doutrinas que não existem mais. Fabricados em massa por frotas que acreditavam em vitórias rápidas, encontram-se selados em caixas marcadas com datas que ninguém mais sabe ler. Cada carga disparada é um objeto que não voltará a existir — ninguém aprendeu a refazê-los.
+---
+
+<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />

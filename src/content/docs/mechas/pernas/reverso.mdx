@@ -1,18 +1,20 @@
 ---
 title: Reverso
-description: Pernas inversas de alta velocidade com Salto de Boost repetido, mas com CA reduzida e incompatível com chassi Crânio.
+description: pernas inversas de alta velocidade.
 propriedades:
   - title: Impulso
     description: |
-      Velocidade 12m. Até **PB vezes por combate**, como ação bônus, o piloto executa um **Salto de Boost**: move-se até 15m em qualquer direção (incluindo vertical), ignorando terreno intermediário e sem provocar ataques de oportunidade.
+      A velocidade de movimento é aumentada para 12m. Como uma ação, o piloto pode fazer um **Salto** em qualquer direção, ignorando terreno difícil. Essa movimentação não provoca ataques de oportunidade. Essa característica tem tantos usos quanto o Bônus de Proficiência do piloto, por combate.
 custos:
-  - title: Frame Exposto
+  - title: Exposição
     description: |
-      CA do mecha reduzida em 1 enquanto Reverso está equipado. A estrutura invertida expõe articulações que nenhum armamento de casco consegue blindar sem travar o movimento. Não compatível com chassi Crânio — a massa derruba o frame no primeiro passo.
+      A CA do mecha é reduzida em 1 enquanto Reverso está equipado. A estrutura invertida expõe articulações que nenhum armamento de casco consegue blindar sem travar o movimento. Pernas Reverso não são compatíveis com chassi Crânio.
 ---
 
 import PecaMecha from '../../../../components/PecaMecha.astro';
 
-<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />
+Reverso é arquitetura de guerra rápida, construída por civilizações que esperavam ganhar cedo. Ganharam ou perderam antes de a tecnologia amadurecer. Os exemplares remanescentes ainda são os mecanismos mais ágeis do universo, mas também são os mais fáceis de partir ao meio.
 
-> Reverso é arquitetura de guerra rápida, construída por civilizações que esperavam ganhar cedo. Ganharam ou perderam antes de a tecnologia amadurecer. Os exemplares remanescentes ainda são os mecanismos mais ágeis do universo moribundo — e os mais fáceis de partir ao meio.
+---
+
+<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />

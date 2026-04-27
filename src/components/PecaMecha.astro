@@ -25,7 +25,7 @@ function renderInline(text: string): string {
 		<div class="mecha-bloco">
 			{propriedades.map((p) => (
 				<p class="mecha-item">
-					<strong>Propriedade — {p.title}.</strong>{' '}
+					<strong>{p.title}.</strong>{' '}
 					<span set:html={renderInline(p.description)} />
 				</p>
 			))}
@@ -36,7 +36,7 @@ function renderInline(text: string): string {
 		<div class="mecha-bloco">
 			{custos.map((c) => (
 				<p class="mecha-item">
-					<strong>Custo — {c.title}.</strong>{' '}
+					<strong>{c.title}.</strong>{' '}
 					<span set:html={renderInline(c.description)} />
 				</p>
 			))}

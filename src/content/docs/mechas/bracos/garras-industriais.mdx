@@ -1,21 +1,23 @@
 ---
 title: Garras Industriais
-description: Braços de agarramento que causam dano automático por turno enquanto o alvo estiver preso, mas travam o braço equipado.
+description: Braços de agarramento que causam dano automático por turno enquanto o alvo estiver preso.
 propriedades:
   - title: Agarrar
     description: |
-      Como ataque, as Garras podem tentar iniciar grapple contra alvos Grandes ou menores (incluindo outros mechas leves). Teste de Atletismo do piloto contra Atletismo ou Acrobacia do alvo, conforme regra padrão de 5e. Em sucesso, o alvo fica agarrado.
+      Como ataque, as Garras podem tentar **Agarrar** alvos Grandes ou menores, incluindo outros mechas leves. Um teste de Atletismo do piloto é realizado contra uma jogada de Atletismo ou Acrobacia do alvo. Em sucesso, o alvo fica agarrado.
   - title: Esmagar
     description: |
-      Enquanto o alvo estiver agarrado pelas Garras, o mecha causa **1d6 contundente automaticamente** no início de cada turno do piloto, sem nova rolagem de ataque. Liberar o grapple é ação livre.
+      Enquanto o alvo estiver agarrado pelas Garras, o mecha causa **1d6 contundente automaticamente** no início de cada turno do piloto. Liberar o agarrão não custa ação.
 custos:
   - title: Braço Ocupado
     description: |
-      Enquanto estiverem em grapple ativo, as Garras não podem atacar outros alvos. O braço equipado fica dedicado ao alvo agarrado. O outro braço continua livre para atacar normalmente.
+      Enquanto agarrando, as Garras não podem atacar outros alvos. O braço equipado fica dedicado ao alvo agarrado. O outro braço continua livre para atacar normalmente.
 ---
 
 import PecaMecha from '../../../../components/PecaMecha.astro';
 
-<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />
+As Garras são ferramentas de demolição reaproveitadas. Fabricadas para desmontar carcaças, não para lutar. Quem equipa Garras escolheu uma arma que lembra constantemente que a guerra veio depois da construção.
 
-> As Garras são ferramentas de demolição reaproveitadas. Fabricadas para desmontar carcaças mortas — não para lutar. Quem equipa Garras escolheu uma arma que lembra constantemente que a guerra veio depois da construção.
+---
+
+<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />

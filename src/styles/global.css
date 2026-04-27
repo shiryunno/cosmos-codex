@@ -8,6 +8,10 @@ h2 {
 	margin-top: 0.75rem;
 }
 
+.sl-heading-wrapper .sl-anchor-link {
+	display: none;
+}
+
 /* ─── Card grid — center last card when alone in a row ──────────────────── */
 
 @media (min-width: 50rem) {
@@ -17,6 +21,13 @@ h2 {
 		margin-inline: auto;
 		width: 100%;
 	}
+}
+
+/* ─── List markers — four-pointed star ─────────────────────────────────── */
+
+.sl-markdown-content ul:not(:where(.not-content *)) > li::marker {
+	content: "✦  ";
+	color: var(--sl-color-accent);
 }
 
 /* ─── Racial traits — fixed fields ──────────────────────────────────────── */

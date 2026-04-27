@@ -1,21 +1,19 @@
 ---
 title: Lâmina Estendida
-description: Arma corpo a corpo com alcance de 3m e ataques múltiplos via Extra Attack, exigindo proximidade para eficiência.
+description: Arma corpo a corpo com alcance de 3m.
 propriedades:
   - title: Alcance Estendido
     description: |
       A lâmina estende o alcance corpo a corpo do mecha para 3m, atingindo alvos a uma célula de distância além do adjacente.
   - title: Arma Leve
     description: |
-      Ataques com a Lâmina seguem a regra normal de Extra Attack. Fighter nível 11 pode atacar 3 vezes com a mesma Lâmina no mesmo turno.
-custos:
-  - title: Exposição ao Avanço
-    description: |
-      Para aplicar dano é preciso estar adjacente (ou quase) ao alvo. Sem pernas Reverso ou Salto de Boost, fechar distância consome turnos de movimento e expõe o mecha a ataques de oportunidade de outros alvos.
+      Ataques com a Lâmina seguem a regra normal de Ataque Extra.
 ---
 
 import PecaMecha from '../../../../components/PecaMecha.astro';
 
-<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />
+Restaram poucas Lâminas Estendidas porque são lindas. Oficiais de frotas extintas as levaram consigo para as câmaras onde morreram, enquanto arqueólogos ainda as encontram intactas nos esqueletos que nunca saíram do posto.
 
-> Restaram poucas Lâminas Estendidas porque são lindas. Oficiais de frotas extintas as levaram consigo para as câmaras onde morreram; os arqueólogos ainda as encontram intactas nos esqueletos que nunca saíram do posto.
+---
+
+<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />

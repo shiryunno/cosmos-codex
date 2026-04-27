@@ -1,18 +1,17 @@
 ---
 title: Bípede
-description: Pernas padrão compatíveis com qualquer chassi e terreno não-extremo, sem bônus ou penalidades especiais.
+description: pernas padrão compatíveis com qualquer chassi e terreno não extremo.
 propriedades:
   - title: Adaptação de Terreno
     description: |
-      Opera sem penalidade especial em qualquer terreno não-extremo: cidade, floresta, interior de nave, ruínas, escadas. Terreno difícil continua consumindo velocidade dobrada conforme regra padrão de 5e.
-custos:
-  - title: Sem Especialização
-    description: |
-      Bípede não recebe bônus estrutural em combate. Não tem boost, não tem plataforma de disparo, não tem mitigação de empurrão. É a escolha de quem prefere compatibilidade com qualquer chassi e qualquer loadout futuro em vez de vantagem situacional.
+      Opera sem penalidade especial em qualquer terreno não extremo: cidade, floresta, interior de nave, ruínas, escadas. Terreno difícil continua consumindo velocidade dobrada.
+
 ---
 
 import PecaMecha from '../../../../components/PecaMecha.astro';
 
-<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />
+Pernas Bípede são comuns. Saem intactas de quase toda ruína, simples demais pra quebrar, genéricas demais pra valer o trabalho de roubar. Quem pilota um Bípede raramente ganha por superioridade mecânica, e sim por saber quando correr.
 
-> A peça mais comum. Pernas Bípede são o que saem intactas de quase toda ruína — simples demais pra quebrar, genéricas demais pra valer o trabalho de roubar. Quem pilota Bípede raramente ganha por superioridade mecânica. Ganha por saber quando correr.
+---
+
+<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />

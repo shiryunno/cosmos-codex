@@ -1,23 +1,27 @@
 ---
-title: "Crânio (Pesado)"
-description: Chassi pesado inamovível com alta CA e HP, mas que falha automaticamente em todos os saves de Destreza.
+title: "Crânio"
+description: Chassi pesado com alta CA e HP.
 propriedades:
-  - title: Peso de Coluna
+  - title: Pilar
     description: |
-      O Crânio não pode ser empurrado, derrubado, agarrado ou movido contra sua vontade por criaturas Grandes ou menores (incluindo outros mechas de chassi Leve). Vantagem em saves de Força e Constituição.
+      O Crânio não pode ser empurrado, derrubado, agarrado ou movido contra sua vontade por criaturas Grandes ou menores (incluindo outros mechas de chassi Leve). Também tem vantagem em testes de salvaguarda de Força e Constituição.
 custos:
-  - title: Falha Inevitável em Destreza
+  - title: Imóvel
     description: |
-      O Crânio falha automaticamente todos os saves de Destreza. Não esquiva — aguenta. Quando instalada com pernas Tracker, o dano de efeitos de área com Dex save é reduzido em PB após aplicação (mitigação estrutural, não esquiva).
+      O Crânio falha automaticamente todos os testes de salvaguarda de Destreza. Quando instalado com pernas Tracker, o dano de efeitos de área que requerem salvaguarda de Destreza tem o dano reduzido. Essa redução é equivalente ao valor do Bônus de Proficiência.
 ---
 
 import PecaMecha from '../../../../components/PecaMecha.astro';
 
+Construído para sustentar o que não devia cair. O Crânio é a peça de arquitetura ambulante das antigas frotas baluarte. Andou pouco, atirou muito, e quando caiu deixou uma cratera que ainda hoje serve de marco para navegantes perdidos.
+
+---
+
 <PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />
+
+---
 
 - **HP base:** 70 + (PB × 15)
 - **CA base:** 17
 - **Tamanho:** Grande
-- **Pernas compatíveis:** Tracker, Bípede pesado
-
-> Construído para sustentar o que não devia cair. O Crânio é a peça de arquitetura ambulante das antigas frotas-baluarte — andou pouco, atirou muito, e quando caiu deixou uma cratera que ainda hoje serve de marco para navegantes perdidos.
+- **Pernas compatíveis:** Tracker e Bípede

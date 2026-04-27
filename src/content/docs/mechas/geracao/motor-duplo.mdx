@@ -1,18 +1,20 @@
 ---
-title: Motor Duplo (Híbrida)
-description: Sistema híbrido que alterna entre recurso de classe e bateria universal, com custo dobrado na primeira ativação do combate.
+title: Motor Duplo
+description: Sistema híbrido que alterna entre recurso de classe e bateria universal.
 propriedades:
   - title: Adaptação de Recurso
     description: |
-      Uma vez por combate, como ação livre, o piloto declara "troca de fonte" e alterna entre usar o recurso de classe **e** bateria universal como fonte de ativação. A troca vale até o fim do combate. Enquanto estiver em modo bateria, o mecha fica imune aos riscos ambientais do Reator Etéreo (útil em zonas de Magia sangrando). Câmara de Canalização funciona em modo padrão — amplifica uma categoria de escala.
+      Uma vez por combate, como ação livre, o piloto pode trocar a fonte, alternando entre usar o recurso de classe ou bateria universal como fonte de ativação. A troca vale até o fim do combate. Enquanto estiver em modo bateria, o mecha fica imune aos riscos ambientais do Reator Etéreo. 
 custos:
   - title: Partida Difícil
     description: |
-      A **primeira ativação de cada combate** consome o dobro de recurso (1 slot vira 2 slots do mesmo nível, 1 carga de bateria vira 2, 1 ponto de Fúria vira 2, 1 ponto de Ki vira 2). Ativações subsequentes consomem normalmente. Pilotos experientes "ligam" o mecha minutos antes do combate começar para esquentar a caldeira fora da iniciativa.
+      A **primeira ativação de cada combate** consome o dobro de recurso. Ativações subsequentes consomem o valor normal.
 ---
 
 import PecaMecha from '../../../../components/PecaMecha.astro';
 
-<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />
+O Motor Duplo é uma costura: dois sistemas que nunca quiseram conversar, forçados a coexistir por engenheiros desesperados quando faltavam peças. Funciona melhor do que tem direito, mas quebra de formas que nenhum manual sobrevivente sabe explicar.
 
-> A Síntese é cicatriz costurada: dois sistemas que nunca quiseram conversar, forçados a coexistir por engenheiros desesperados quando faltavam peças. Funciona melhor do que tem direito. Quebra de formas que nenhum manual sobrevivente sabe explicar.
+---
+
+<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />

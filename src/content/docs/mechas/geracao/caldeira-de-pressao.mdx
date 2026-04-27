@@ -1,18 +1,17 @@
 ---
-title: Caldeira de Pressão (Mecânica)
-description: Sistema de geração mecânica imune a zonas mortas de Magia, mas que bloqueia a amplificação da Câmara de Canalização.
-propriedades:
-  - title: Estabilidade Imune
-    description: |
-      Opera sem penalidade em qualquer zona: Magia sangrando, Magia morta, Vazio aberto, Abismo corrompido. Onde os Reatores Etéreos cospem fagulha, a Caldeira tritura.
+title: Caldeira de Pressão
+description: istema mecânico imune a zonas mortas de Magia.
 custos:
-  - title: Surdez Arcana
+  - title: Supressão
     description: |
-      Câmara de Canalização equipada **perde a amplificação** — magias conjuradas via Câmara funcionam em escala pessoal, como se lançadas fora do mecha. Magias bloqueadas pela Câmara seguem a regra normal do Sec. 3 (pausa o round inteiro).
+      Uma Câmara de Canalização equipada em conjunto com Caldeira de Pressão **perde a amplificação**: magias conjuradas via Câmara funcionam em escala normal, como se lançadas fora do mecha.
 ---
 
 import PecaMecha from '../../../../components/PecaMecha.astro';
 
+Construída antes de o universo entender que a Magia podia morrer, e ainda assim cega para ela. A Caldeira de Pressão é o que sobrou das civilizações que nunca confiaram em deuses - e portanto não notaram quando os deuses se foram.
+
+---
+
 <PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />
 
-> Construída antes de o universo entender que a Magia podia morrer, e ainda assim cega para ela. A Caldeira de Pressão é o que sobrou das civilizações que nunca confiaram em deuses — e portanto não notaram quando os deuses se foram.
