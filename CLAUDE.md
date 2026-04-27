@@ -133,3 +133,14 @@ Quando bater dúvida sobre Astro ou Starlight, consultar a documentação oficia
 - Content Collections: https://docs.astro.build/en/guides/content-collections/
 
 API e features mudam — confirme antes de usar.
+
+## Deploy
+
+- **URL de produção:** https://shiryunno.github.io/cosmos-codex
+- **Repositório:** https://github.com/shiryunno/cosmos-codex
+- **Branch de deploy:** `main` — qualquer push para `main` dispara o workflow automaticamente
+- **Workflow:** `.github/workflows/deploy.yml` via `withastro/action@v3`
+- **`site` no astro.config.mjs:** `https://shiryunno.github.io/cosmos-codex`
+- **`base` no astro.config.mjs:** `/cosmos-codex`
+
+Nunca remover ou alterar `site` e `base` sem atualizar os dois juntos — um sem o outro quebra os links internos em produção mesmo que o build passe localmente.
