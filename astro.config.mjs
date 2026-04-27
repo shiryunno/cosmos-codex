@@ -3,6 +3,8 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
+	site: 'https://shiryunno.github.io/cosmos-codex',
+	base: '/cosmos-codex',
 	integrations: [
 		starlight({
 			title: 'Códice de Memórias',
