@@ -5,7 +5,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'Códices de Memórias',
+			title: 'Códice de Memórias',
 			description: 'Compêndio de consulta para a campanha — raças, equipamento, mechas e naves no fim das estrelas.',
 			locales: {
 				root: {
