@@ -1,0 +1,70 @@
+---
+title: Armaduras Pesadas
+description: Proteção máxima ao custo de mobilidade e força mínima exigida. Cotas, talas e placas para linha de frente.
+---
+
+import Armadura from '../../../../components/Armadura.astro';
+
+<Armadura
+  nome="Cota de Anéis"
+  equivalencia="Ring Mail (14)"
+>
+  Couro com anéis metálicos pesados costurados sobre ele. Os anéis reforçam contra golpes de espadas e machados.
+
+  As civilizações sobreviventes raramente fabricam uma Cota de Anéis por escolha — ela surge como refação de armaduras melhores que se degradaram, ou como produção improvisada em planetas sem acesso a ligas mais sofisticadas. Carregar uma Cota de Anéis é sinal de escassez.
+</Armadura>
+
+<Armadura
+  nome="Cota de Malha"
+  equivalencia="Chain Mail (16)"
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Brynja Fulr",
+      traducao: "Malha Completa",
+      descricao: "Uma armadura tradicional de guerreiro Aesir em campanha de abordagem ou defesa de nave. Diferente da _Hringaserkr_, a _Brynja Fulr_ é a armadura para linha de frente, usada por tropa e não por comando. A tradição Aesir prescreve que cada _Brynja Fulr_ seja consertada pelo próprio portador após combate, não por ferreiro dedicado. A ideia é cultural: o guerreiro que conserta a própria armadura conhece onde ela foi atingida, e aprende com cada remendo."
+    }
+  ]}
+>
+  Anéis metálicos entrelaçados formando armadura completa, com camada de tecido acolchoado por baixo para evitar atrito, incluindo manoplas.
+
+  A Cota de Malha funciona por **dissipação distribuída**: os milhares de anéis individuais transferem impacto uns aos outros, transformando golpe concentrado em pressão espalhada. Isso é particularmente eficaz contra armas cortantes, que dependem de fio aplicado em ponto único. Contra armas contundentes, a dissipação é menos eficiente — e daí vem a camada acolchoada por baixo, que complementa com absorção física o que a malha não consegue absorver por distribuição.
+</Armadura>
+
+<Armadura
+  nome="Armadura de Talas"
+  equivalencia="Splint Armor (17)"
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Armadura de Vega",
+      descricao: "Faz parte da linha intermediária de produção industrial dos Anões. Vega é uma estrela jovem — o nome sinaliza que a peça é relativamente recente em termos de desenvolvimento tecnológico, mesmo dentro da tradição Anã."
+    }
+  ]}
+>
+  Feita de tiras metálicas estreitas rebitadas sobre couro acolchoado, com uma cota de malha flexível que protege as articulações.
+
+  As tiras metálicas estreitas são flexíveis onde precisam, e rígidas onde precisam. Esse princípio é simples mas difícil de executar, e explica o custo de fabricação relativamente alto. Cada tira tem densidade calibrada para a região do corpo que cobre: peitoral e costas recebem tiras mais espessas, articulações recebem tiras mais finas para permitir movimento. A cota de malha entre as tiras, longe de ser decorativa, é a camada que evita que golpes entrem _entre_ as tiras nas articulações. Uma Armadura de Talas mal ajustada tem ponto fraco característico nos flancos, e guerreiros experientes sabem mirar ali.
+</Armadura>
+
+<Armadura
+  nome="Placa Completa"
+  equivalencia="Plate Armor (18)"
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Placa de Antares",
+      descricao: "A estrela Antares é uma supergigante, escolhida para nomear a armadura mais pesada da linha industrial Anã. A _Placa de Antares_ é produção lenta e cara, mesmo na era que precedia o colapso. Cada peça era forjada sob medida para o guerreiro específico, em processo que consumia dias de trabalho na Forja. Uma _Placa de Antares_ sobrevivente hoje é quase sempre herdada, modificada para o novo portador, ou encontrada em câmara selada onde o portador original morreu vestindo ela."
+    },
+    {
+      povo: "Aesir",
+      nome: "Fulbrynja",
+      traducao: "Malha-plena",
+      descricao: "Armadura usada por Jarls em guerra de frotas. A tradição Aesir prescreve que a _Fulbrynja_ seja fabricada pelo próprio Jarl que a vai portar, com ajuda do ferreiro da frota. O Jarl forja simbolicamente as placas peitorais, enquanto o ferreiro faz o resto. Isso torna cada _Fulbrynja_ inseparável do Jarl original. Quando o Jarl morre, a armadura é quebrada em cerimônia, a placa do peitoral é preservada como memória, e o resto é reaproveitado em nova armadura para o próximo Jarl. _Fulbrynjas_ completas que sobrevivem sem serem quebradas são geralmente sinais de que a frota original foi destruída antes que a cerimônia pudesse ser feita."
+    }
+  ]}
+>
+  Placas de metal moldadas e interligadas cobrindo todo o corpo. Inclui manoplas, botas de couro pesadas, elmo com viseira, e camadas espessas de acolchoamento por baixo, enquanto fivelas e tiras distribuem o peso pelo corpo.
+
+  A Placa Completa é composta por **liga multicamadas**, não metal monolítico. Placas modernas têm camada externa de liga rígida para dispersão de impacto, camada intermediária de compósito para absorção, e forro interno de tecido amortecedor para conforto e distribuição final. Cada camada foi desenvolvida por uma geração diferente de engenheiros, e a Placa que sobrevive hoje é acúmulo de séculos de refinamento.
+</Armadura>

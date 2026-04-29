@@ -41,7 +41,18 @@ export default defineConfig({
 				},
 				{
 					label: 'Equipamento',
-					autogenerate: { directory: 'equipamento' },
+					items: [
+						{ label: 'Visão geral', link: 'equipamento' },
+						{
+							label: 'Armaduras',
+							items: [
+								{ label: 'Armaduras Leves', link: 'equipamento/armaduras/leves' },
+								{ label: 'Armaduras Médias', link: 'equipamento/armaduras/medias' },
+								{ label: 'Armaduras Pesadas', link: 'equipamento/armaduras/pesadas' },
+								{ label: 'Escudos', link: 'equipamento/armaduras/escudos' },
+							],
+						},
+					],
 				},
 			],
 			customCss: ['./src/styles/custom.css', './src/styles/global.css'],

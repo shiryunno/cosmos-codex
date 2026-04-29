@@ -1,0 +1,41 @@
+---
+title: Armaduras Leves
+description: Proteção mínima e máxima mobilidade. Traje estofado, couro curtido e couro cravejado.
+---
+
+import Armadura from '../../../../components/Armadura.astro';
+
+<Armadura
+  nome="Traje Estofado"
+  equivalencia="Padded Armor (11 + Des)"
+>
+  Um acolchoado básico de camadas de tecido e enchimento. A versão comum em frotas sobreviventes é feita de retalhos de uniformes antigos, sem especificação industrial nenhuma. Quem usa um Traje Estofado frequentemente o usa porque é o que encontrou, não o que escolheu.
+
+  O Traje Estofado circula sem origem clara: qualquer pessoa com agulha, tecido e paciência fabrica o seu. Tripulações civis em planetas de fronteira produzem Trajes Estofados em larga escala informal, e o objeto não carrega identidade cultural específica.
+</Armadura>
+
+<Armadura
+  nome="Couro Curtido"
+  equivalencia="Leather Armor (11 + Des)"
+>
+  Peitoral e ombreiras de couro endurecido por fervura em óleo, com o resto do conjunto em material mais flexível. É uma armadura de sobrevivência, não dedicada para combate.
+
+  Couro Curtido circula como armadura genérica, fabricado em pequenas oficinas em qualquer planeta com fauna capaz de fornecer o material. É a armadura para caçador, patrulheiro rural ou mercador de caravana que atravessa regiões perigosas.
+</Armadura>
+
+<Armadura
+  nome="Couro Cravejado"
+  equivalencia="Studded Leather Armor (12 + Des)"
+  fabricantes={[
+    {
+      povo: "Kirage",
+      nome: "Vrk-tsrk",
+      traducao: "Pele Espinhada",
+      descricao: "Uma adaptação cultural do Couro Cravejado pelos Kirage — o padrão de cravejamento replica a disposição de espículas defensivas de certas castas ancestrais, uma estrutura biológica que foi perdida ao longo das gerações de adaptação espacial, mas que permanece na armadura como lembrança cultural. Kirage Exilados frequentemente preferem o _Vrk-tsrk_ a qualquer outra armadura leve, por afinidade estética e por familiaridade, pois a peça imita algo que o corpo deles quase teve.\n\nA fabricação não é feita em larga escala; cada peça é feita por encomenda, e Exilados geralmente adaptam a sua ao próprio tamanho ao longo de anos de uso."
+    }
+  ]}
+>
+  Feito de couro resistente mas flexível, reforçado com cravos ou espículas de metal próximas umas das outras. A versão mais reconhecível tem padrão de cravejamento irregular e funcional, com os cravos posicionados para desviar golpes em ângulos específicos.
+
+  Os cravos metálicos são posicionados para **desviar pontas de arma por ângulo**, não para absorver impacto — um golpe que atingiria o torso diretamente escorrega pelo cravo mais próximo e perde a trajetória. A fabricação exige cálculo mínimo de geometria, e armaduras mal cravejadas de fato funcionam pior que couro simples. É uma tecnologia sutil disfarçada de armadura rudimentar.
+</Armadura>

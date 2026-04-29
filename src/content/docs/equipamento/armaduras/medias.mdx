@@ -1,0 +1,79 @@
+---
+title: Armaduras Médias
+description: Equilíbrio entre proteção e mobilidade. Peles, malhas curtas, escamas e peitorais para combatentes versáteis.
+---
+
+import Armadura from '../../../../components/Armadura.astro';
+
+<Armadura
+  nome="Armadura de Pele"
+  equivalencia="Hide Armor (12 + Des, máx 2)"
+>
+  Peles grossas e couro sobreposto em camadas. A armadura mais rudimentar da categoria média, usada por tribos de fronteira, povos que perderam acesso a manufatura metálica, ou sobreviventes isolados em planetas com fauna abundante.
+
+  A Armadura de Pele é produto de necessidade: onde existe fauna grande, pode-se fabricar uma Armadura de Pele. Quem a veste em ambiente mais civilizado frequentemente é visto como vindo de longe, ou como pessoa de origem humilde.
+</Armadura>
+
+<Armadura
+  nome="Cota de Malha Curta"
+  equivalencia="Chain Shirt (13 + Des, máx 2)"
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Hringaserkr",
+      traducao: "Camisa de anéis",
+      descricao: "Armadura tradicional de oficiais de frota Aesir que transitavam entre cerimônia e combate. A _Hringaserkr_ é frequentemente usada por baixo de túnicas ou mantos em contextos diplomáticos — portar armadura visível em reunião entre frotas é declaração hostil, mas usar _Hringaserkr_ sob a roupa é prática aceita e esperada. Todo oficial Aesir presume que os outros oficiais Aesir estão usando uma."
+    }
+  ]}
+>
+  Anéis de metal entrelaçados, formando vestimenta que cobre torso e parte dos braços, usada sob camadas de roupa ou couro para disfarçar. Os anéis são de ligas leves, desenvolvidas antes do colapso para oficiais que precisavam de proteção sem comprometer aparência civil.
+</Armadura>
+
+<Armadura
+  nome="Escama Metálica"
+  equivalencia="Scale Mail (14 + Des, máx 2)"
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Escama de Procyon",
+      descricao: "Era parte da linha industrial dos armeiros orbitais. Procyon é uma estrela relativamente calma, escolhida para nomear armadura de uso comum. Não é uma peça de comandantes e nem de rituais, é o equipamento de guarda de estação ou de soldado de linha de frente. Produzida em alto volume antes do colapso, relativamente encontrável em depósitos remanescentes."
+    }
+  ]}
+>
+  Couro coberto por lâminas metálicas sobrepostas em padrão de escamas de peixe, incluindo manoplas. Armadura média clássica — proteção boa, mobilidade aceitável e peso alto.
+
+  As lâminas sobrepostas funcionam por princípio de **distribuição progressiva**: um golpe atinge múltiplas escamas simultaneamente, e cada uma absorve fração do impacto antes de transmitir ao couro de base. O design foi desenvolvido para combate contra armamento cortante pré-industrial, e sobrevive até hoje porque continua eficaz contra armas de fogo de baixa velocidade. O padrão de distribuição funciona razoavelmente bem também contra impactos cinéticos, embora a tecnologia original não previsse isso.
+</Armadura>
+
+<Armadura
+  nome="Peitoral de Placa"
+  equivalencia="Breastplate (14 + Des, máx 2)"
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Peitoral de Arcturos",
+      descricao: "Era parte da linha de produção destinada a oficiais de frota e agentes de guarda em missões importantes. Arcturos como nome indica peça de confiança — uma estrela visível e familiar, para uma armadura de uso sério mas não excepcional. O peitoral é ajustável em fivelas laterais, permitindo que a mesma peça sirva a corpos de tamanhos diferentes com pequena adaptação. Essa versatilidade foi decisão industrial consciente dos Anões: armaduras precisam circular entre portadores quando guerreiros morrem, e a armadura que serve a um único corpo específico desperdiça material."
+    }
+  ]}
+>
+  Peça de metal forjado que cobre o peito, usada com couro macio nos braços e pernas. Deixa membros relativamente desprotegidos mas protege órgãos vitais sem atrapalhar movimento.
+
+  O Peitoral de Placa não é apenas metal conformado. O núcleo tem camada de algum tipo de **compósito amortecedor** entre a placa externa e o couro interno — material desenvolvido pelos Anões para redistribuir impacto em torno dos pontos vitais. Um golpe que atingiria o coração é redirecionado para o externo ou para as costelas, onde o dano é menos imediatamente letal. A tecnologia é antiga mas ainda funcional, e explica por que o Peitoral continua presente no arsenal sobrevivente.
+</Armadura>
+
+<Armadura
+  nome="Meia-Armadura"
+  equivalencia="Half Plate Armor (15 + Des, máx 2)"
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Hálfbrynja",
+      traducao: "Meia malha",
+      descricao: "Usada por oficiais de comando Aesir que precisam liderar de frente mas não podem perder mobilidade, como capitães de abordagem ou Jarls em campanha. A _Hálfbrynja_ é peça de status entre Aesir: portar uma sinaliza que o oficial está ativo em operações de campo, não apenas em função cerimonial.\n\nCada _Hálfbrynja_ Aesir tradicionalmente carrega gravação na placa peitoral com o selo da frota à qual o portador pertence. A gravação é frequentemente apagada se a peça passa a outra frota — ou mantida, como sinal de que o portador quer que sua origem seja lembrada."
+    }
+  ]}
+>
+  Placas metálicas moldadas cobrindo a maior parte do corpo. Não inclui proteção completa de pernas, apenas greves simples presas por tiras de couro.
+
+  A Meia-Armadura opera no princípio de **cobertura seletiva de torso e articulações superiores**: as placas moldadas protegem o que é crítico, e as greves leves nas pernas oferecem mobilidade em combate em corredor ou no convés. Desenvolvida especificamente para abordagem — o oficial que comanda a tropa precisa correr entre naves em acoplamento. A Meia-Armadura é compromisso calculado, não falha de proteção.
+</Armadura>

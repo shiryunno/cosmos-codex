@@ -39,7 +39,7 @@ function renderInline(text: string): string {
 				<div class="fabricante">
 					<p class="fabricante-cabecalho">
 						<strong>{f.povo}.</strong>{' '}
-						<em>{f.nome}</em>
+						<em>Nome: {f.nome}</em>
 						{f.traducao && <span class="fabricante-trad"> &ldquo;{f.traducao}&rdquo;.</span>}
 					</p>
 					{f.descricao.split('\n\n').map((paragrafo) => (
