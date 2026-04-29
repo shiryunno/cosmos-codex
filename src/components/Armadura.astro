@@ -1,0 +1,116 @@
+---
+interface Fabricante {
+	povo: string;
+	nome: string;
+	traducao?: string;
+	descricao: string;
+}
+
+interface Props {
+	nome: string;
+	equivalencia: string;
+	fabricantes?: Fabricante[];
+}
+
+const { nome, equivalencia, fabricantes } = Astro.props;
+
+function renderInline(text: string): string {
+	return text
+		.trim()
+		.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+		.replace(/_(.*?)_/g, '<em>$1</em>')
+		.replace(/\*(.*?)\*/g, '<em>$1</em>')
+		.replace(/`(.*?)`/g, '<code>$1</code>');
+}
+---
+
+<section class="armadura">
+	<h3 class="armadura-nome">{nome}</h3>
+	<p class="armadura-equiv">{equivalencia}</p>
+
+	<div class="armadura-corpo">
+		<slot />
+	</div>
+
+	{fabricantes && fabricantes.length > 0 && (
+		<div class="armadura-fabricantes">
+			<p class="fabricantes-label">Fabricantes</p>
+			{fabricantes.map((f) => (
+				<div class="fabricante">
+					<p class="fabricante-cabecalho">
+						<strong>{f.povo}.</strong>{' '}
+						<em>{f.nome}</em>
+						{f.traducao && <span class="fabricante-trad"> &ldquo;{f.traducao}&rdquo;.</span>}
+					</p>
+					{f.descricao.split('\n\n').map((paragrafo) => (
+						<p class="fabricante-desc" set:html={renderInline(paragrafo)} />
+					))}
+				</div>
+			))}
+		</div>
+	)}
+</section>
+
+<style>
+	.armadura {
+		margin-bottom: 2.5rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid var(--sl-color-gray-5);
+	}
+
+	.armadura:last-child {
+		border-bottom: none;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.armadura-nome {
+		margin-bottom: 0.2rem;
+		border-bottom: none;
+	}
+
+	.armadura-equiv {
+		color: var(--sl-color-gray-3);
+		font-style: italic;
+		margin-top: 0;
+		margin-bottom: 1.25rem;
+		font-size: 0.875em;
+	}
+
+	.armadura-corpo {
+		margin-bottom: 1.25rem;
+	}
+
+	.fabricantes-label {
+		font-size: 0.8em;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: var(--sl-color-gray-3);
+		margin-bottom: 0.75rem;
+		font-weight: 600;
+	}
+
+	.fabricante {
+		border-left: 2px solid var(--sl-color-gray-5);
+		padding-left: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.fabricante:last-child {
+		margin-bottom: 0;
+	}
+
+	.fabricante-cabecalho {
+		margin-bottom: 0.4rem;
+	}
+
+	.fabricante-trad {
+		color: var(--sl-color-gray-3);
+	}
+
+	.fabricante-desc {
+		margin: 0.3rem 0;
+		font-size: 0.95em;
+		line-height: 1.6;
+	}
+</style>
