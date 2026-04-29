@@ -1,0 +1,24 @@
+---
+title: Catalizador Arcano
+description: meio tecnologico, meio mágico.
+propriedades:
+  - title: Calibração de Impacto
+    description: |
+      Os circuitos calculam a saída ideal no momento do impacto: contra alvos resistentes, perfuram, e contra alvos sem resistência, amplificam da mesma forma. Uma vez por turno, um ataque à escolha do piloto causa dano adicional. O dano adicional é equivalente ao **Bônus de Proficiência** do Piloto, e ignora a resistência do alvo a esse tipo de dano. 
+  - title: Sobrecarga
+    description: | 
+        Uma vez por combate, como ação bônus, o piloto força os circuitos além do limite de segurança. O estado dura até o fim do próximo turno do piloto. Enquanto ativo:<br />
+        - Todos os ataques causam dano adicional igual ao **Bônus de Proficiência** do Piloto.<br />
+        - Todos os testes e testes de salvaguarda de Força são feitos com **vantagem**.<br />
+        - Qualquer empurrão tem a distância aumentada para o dobro da distância normal.<br /><br />
+        Ao fim da Sobrecarga, os custos são cobrados simultaneamente: o mecha sofre dano estrutural (não pode ser reduzido por nenhum meio) equivalente a 4 vezes o Bônus de Proficiência do Piloto; o Piloto faz um teste de salvaguarda de Constituição (CD 14). Em caso de falha, recebe 1 nível de exaustão; os circuitos arcanos queimam e a geração fica inoperante pelo resto do combate - o mecha continua funcional, mas sem a **Calibração de Impacto**.
+  - title: Dependência Arcana
+    description: **Dependência Arcana.** Em zonas onde a Magia está completamente morta, os circuitos ficam sem alimentação: **Calibração de Impacto**. A **Sobrecarga** ainda pode ser ativada nessas condições, mas o dano estrutural sobe para 6 vezes o Bônus de Proficiência do Piloto - os circuitos forçam saída máxima sem suporte arcano para regular o fluxo.
+
+---
+
+import PecaMecha from '../../../../components/PecaMecha.astro';
+
+Cada circuito foi traçado com intenção, e cada interface entre arco e pistão foi milimetricamente calculada. A Sobrecarga não é falha de projeto: é o limite honesto de qualquer coisa que foi feita para durar - sem explodir. Pilotos que sobrevivem a ela descrevem o mesmo: dez segundos de clareza absoluta, e depois o cheiro de metal queimado que não sai da roupa por dias.
+
+<PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />

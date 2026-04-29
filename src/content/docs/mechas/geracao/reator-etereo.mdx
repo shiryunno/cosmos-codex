@@ -4,13 +4,15 @@ description: amplifica magia em duas categorias de escala.
 propriedades:
   - title: Sintonia com a Magia
     description: |
-      Uma Câmara de Canalização equipada em conjunto com o Reator Etéreo amplifica magias em **duas categorias de escala** em vez de uma. Magias normalmente bloqueadas pela Câmara podem ser lançadas pausando apenas a **ação bônus e o movimento** do turno do piloto, em vez de sacrificar o turno inteiro.
+      Uma Câmara de Canalização equipada em conjunto com o Reator Etéreo amplifica magias em **duas categorias de escala** em vez de uma. Magias normalmente bloqueadas pela Câmara podem ser lançadas pausando apenas a **ação bônus e o movimento** do turno do piloto, em vez de sacrificar o turno inteiro.
 custos:
   - title: Fragilidade Mágica
     description: |
-      Em zonas onde a Magia está instável, o piloto rola 1d20 no início de cada turno. Em **1**, o mecha trava: a próxima Ação consome o dobro do recurso de ativação. Em zonas onde a Magia está completamente morta, o mecha não liga - piloto e máquina ficam inertes.
+      Em zonas onde a Magia está instável, o piloto rola 1d20 no início de cada turno. Em 1, o mecha trava, desligando, e exige reativação imediata, consumindo novamente o recurso de ativação para continuar operando naquele combate. Em zonas onde a Magia está completamente morta, o mecha não liga - piloto e máquina ficam inertes.
 ---
 
 import PecaMecha from '../../../../components/PecaMecha.astro';
+
+Feito pelas civilizações que nunca duvidaram da Magia. O Reator Etéreo opera na mesma corrente que ainda pulsa pela Magia moribunda: onde corre clara, ele canta; onde sangra, ele tropeça; onde morreu, ele apaga.
 
 <PecaMecha propriedades={frontmatter.propriedades} custos={frontmatter.custos} />

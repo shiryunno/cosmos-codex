@@ -2,16 +2,19 @@
 title: Canhão Acoplado
 description: Arma pesada de alto dano com disparo único por turno.
 propriedades:
+  - title: Alcance
+    description: | 
+      O alcance máximo do canhão é longo - 72m. 
   - title: Arma Pesada
     description: |
-      O Canhão dispara **uma vez por turno**, independente de quantos ataques o piloto tenha disponíveis. A característica Ataque Extra não permite múltiplos disparos.
+      O Canhão dispara **uma vez por turno**, independente de quantos ataques o piloto tenha disponíveis. A característica Ataque Extra não permite múltiplos disparos.
 custos:
   - title: Recarga 3-6
     description: |
-      Após disparar, o Canhão entra em recarga. No início de cada turno subsequente do piloto, role 1d6; em **3, 4, 5 ou 6** o Canhão está pronto novamente. Em **1 ou 2** continua recarregando. O primeiro disparo de cada combate não requer recarga: o Canhão começa carregado.
+      Após disparar, o Canhão entra em recarga. No início de cada turno subsequente do piloto, role 1d6 - se o resultado for **3, 4, 5 ou 6** o Canhão está pronto novamente. Em **1 ou 2** continua recarregando. O primeiro disparo de cada combate não requer recarga: o Canhão começa carregado.
   - title: Alcance Mínimo
     description: |
-      O Canhão não dispara em corpo a corpo. Alvos adjacentes ao mecha estão em ângulo morto e atacá-los exige reposicionar o mecha primeiro.
+      O Canhão não dispara em corpo a corpo, apenas em uma distância mínima de 3 metros. Alvos adjacentes ao mecha estão em ângulo morto e atacá-los exige reposicionar o mecha primeiro.
 ---
 
 import PecaMecha from '../../../../components/PecaMecha.astro';
