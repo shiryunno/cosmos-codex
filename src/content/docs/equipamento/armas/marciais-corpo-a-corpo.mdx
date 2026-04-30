@@ -1,0 +1,426 @@
+---
+title: Armas Marciais Corpo a Corpo
+description: Arsenal marcial de combate próximo — machados, espadas, lanças e armas de haste.
+---
+
+import Arma from '@/components/Arma.astro';
+
+### Machado
+
+<Arma
+  equivalencia="Battleaxe"
+  dano="1d8 cortante"
+  maestria="Topple"
+  propriedades={["Versátil (1d10)"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Valrøxa",
+      traducao: "machado-dos-mortos-escolhidos",
+      descricao: "Machado cerimonial adotado por guerreiros que passaram por ritual de sobrevivência específico da frota. A lâmina tradicional tem entalhe no fio com o nome do portador anterior, acumulado ao longo de gerações — portar uma _Valrøxa_ com muitos entalhes é sinal de que a arma já ensinou muita gente a usar."
+    },
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Corte de Altair",
+      descricao: "Linha de produção industrial, mais leve que o modelo Aesir e sem entalhes. Vendida em lotes para mercados sobreviventes. A preferência dos Anões pela versão de uma mão é prática: cabe no cinto junto das ferramentas de forja."
+    },
+    {
+      povo: "Kirage",
+      nome: "Tsk-rrv",
+      traducao: "Morde e Solta",
+      descricao: "Adaptação Kirage do formato humanoide, com cabeça menor e ponta agressiva. Soldados Kirage usam em pares; Exilados frequentemente carregam apenas um, por peso e por prática de sobrevivência solo."
+    }
+  ]}
+>
+  O machado de uma mão é uma arma bem distribuída. Cabe na mochila, resolve briga, pode derrubar o alvo num golpe bem dado. Toda frota tem; toda tripulação sabe usar.
+</Arma>
+
+### Mangual
+
+<Arma
+  equivalencia="Flail"
+  dano="1d8 contundente"
+  maestria="Sap"
+  fabricantes={[
+    {
+      povo: "Biowl",
+      nome: 'Série FLT-2 "Chicote Metal"',
+      descricao: "Linha industrial de baixo custo, produzida como arma de tripulação de emergência em frotas com economia apertada. O apelido veio do som característico da corrente em movimento."
+    },
+    {
+      povo: "Kirage",
+      nome: "Vsk-vrr",
+      traducao: "Cauda que Gira",
+      descricao: "Os Kirage gostam do mangual porque o movimento circular lembra a forma como os soldados antigamente lutavam com mandíbulas articuladas — traço biológico que foi perdendo força ao longo das gerações de adaptação, mas que culturalmente persiste."
+    }
+  ]}
+>
+  Arma esquisita mas funcional. Cabeça metálica ligada ao cabo por corrente curta — o golpe não é tão poderoso quanto um martelo, mas a esfera metálica pode contornar o escudo e causar impacto em ângulos imprevisíveis.
+</Arma>
+
+### Glaive
+
+<Arma
+  equivalencia="Glaive"
+  dano="1d10 cortante"
+  maestria="Graze"
+  propriedades={["Pesada", "Alcance", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Langrstav",
+      traducao: "Haste Longa",
+      descricao: "Arma da guarda _Jarl_ em assembleia de frota, usada tanto como símbolo de posto quanto como arma real. Um _Langrstav_ sempre carrega o selo do Jarl atual gravado perto da lâmina, e a troca de liderança envolve um ritual de regravação."
+    },
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Ceifo de Deneb",
+      descricao: "Versão industrial, usada por vigias de estação orbital. A lâmina tem ângulo ligeiramente diferente do modelo Aesir — otimizada para corredores estreitos de estação, não para combate em campo aberto."
+    }
+  ]}
+>
+  Arma de haste longa com lâmina curva na ponta, com peso distribuído para golpes amplos a distância. O golpe que passa raspando ainda causa dano pela continuidade do movimento.
+</Arma>
+
+### Machado Descomunal
+
+<Arma
+  equivalencia="Greataxe"
+  dano="1d12 cortante"
+  maestria="Cleave"
+  propriedades={["Pesada", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Stormøx",
+      traducao: "Machado Tempestade",
+      descricao: "Arma tradicional de Bárbaros Aesir nas frotas de guerra antigas, hoje herdada pelos combatentes que ainda mantêm a tradição de _berserkr_. Um _Stormøx_ nunca é feito em série. Cada um é forjado individualmente, e o Aesir que porta um reconhece o peso e o equilíbrio como se reconhece uma voz familiar."
+    },
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Partidor de VY Canis",
+      descricao: "A versão industrial tem a lâmina ligeiramente menor e cabo reforçado com fibra interna, pois o cabo quebrava com frequência inaceitável nos primeiros lotes, e os Anões nunca esqueceram o erro."
+    }
+  ]}
+>
+  Arma de frente de batalha usada quando o problema é: "tem muitos deles".
+</Arma>
+
+### Espada Descomunal
+
+<Arma
+  equivalencia="Greatsword"
+  dano="2d6 cortante"
+  maestria="Graze"
+  propriedades={["Pesada", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Brjótsverð",
+      traducao: "Espada Quebra",
+      descricao: "Uma arma de duelo formal Aesir: desafios de honra entre membros da frota tradicionalmente acontecem com _Brjótsverð_, mesmo quando o portador prefere outra arma no dia a dia."
+    },
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Lâmina de Rigel",
+      descricao: "Nomeada em homenagem à supergigante azul Rigel, uma estrela que queima combustível rápido demais e terá vida curta em termos estelares. A metáfora não é acidental: a _Lâmina de Rigel_ é lâmina de quem quer decidir rápido. Produzida em volume menor que o _Partidor de VY Canis_ por exigir temperatura de forja muito específica."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série GSW-4 "Degolador"',
+      descricao: "Linha de produção em massa voltada para oficiais de tripulação. O apelido é descritivo: a arma foi calibrada especificamente para o corte vertical descendente com alvo em posição inferior — posição comum em cenas de execução no convés. Os operadores Biowl fabricantes da linha sabiam o uso, e o apelido é registro dessa consciência."
+    }
+  ]}
+>
+  Um corte de espada que causa dano mesmo quando o corte passa raspando. É a arma que se usa quando o alvo esquiva bem.
+</Arma>
+
+### Alabarda
+
+<Arma
+  equivalencia="Halberd"
+  dano="1d10 cortante"
+  maestria="Cleave"
+  propriedades={["Pesada", "Alcance", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Alabarda de Antares",
+      descricao: "Produção padrão dos corpos de guarda orbital. Antares foi escolhida por ser uma supergigante estável o suficiente para nomear linha de produção que precisa ser confiável."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série HLB-6 "Formação"',
+      descricao: "O apelido vem do uso tático: a alabarda Biowl foi fabricada para tropas em formação fechada, onde cada soldado protege o flanco do próximo e os ganchos operam como uma fileira contínua. Em combate individual, o modelo é canhestro; em linha, é devastador."
+    }
+  ]}
+/>
+
+### Lança de Investida
+
+<Arma
+  equivalencia="Lance"
+  dano="1d10 perfurante"
+  maestria="Topple"
+  propriedades={["Pesada", "Alcance", "Duas Mãos (exceto montado)"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Reiðspjót",
+      traducao: "Lança do que Cavalga",
+      descricao: "Arma tradicional de caçadores Aesir que usavam montarias nativas em planetas ainda habitáveis antes das intermináveis diásporas. Hoje, _Reiðspjót_ é usada quase exclusivamente por pilotos de mecha Aesir. A tradição se migrou da criatura viva para a máquina, sem reconhecer internamente a mudança."
+    },
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Pilar de Betelgeuse",
+      descricao: "Nome pesa porque Betelgeuse pode explodir a qualquer momento — uma _Pilar de Betelgeuse_ carrega a mesma carga simbólica de impacto iminente e irreversível. Produzida em baixa quantidade, e quase sempre encomendada para pilotos de mecha específicos."
+    }
+  ]}
+>
+  Lança longa e pesada, otimizada para uso em montaria. O impacto da investida é projetado para derrubar o alvo.
+</Arma>
+
+### Espada Longa
+
+<Arma
+  equivalencia="Longsword"
+  dano="1d8 cortante"
+  maestria="Sap"
+  propriedades={["Versátil (1d10)"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Langrsverð",
+      descricao: "Arma de Jarl em batalha real, diferente da _Brjótsverð_, que é para duelo formal. A _Langrsverð_ é a arma de quem vai pro combate esperando voltar. Todo Jarl eleito recebe uma ao ascender ao posto; a passagem da espada entre Jarls é ritualística e não pode ser interrompida mesmo em tempo de crise."
+    },
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Fio de Sirius",
+      descricao: "Versão industrial bem distribuída, usada por guardas de instalação em planetas com presença Anã. O _Fio de Sirius_ foi nomeado na intenção de ser peça comum. Hoje é difícil achar um Anão que não tenha manuseado pelo menos uma _Fio de Sirius_."
+    },
+    {
+      povo: "Kirage",
+      nome: "Tzz-rvk",
+      traducao: "Dente Comprido",
+      descricao: "A versão Kirage tem lâmina ligeiramente mais estreita e ponta mais estendida — otimizada para golpe perfurante com arremate cortante, em vez do corte amplo preferido pelos humanoides. Exilados frequentemente usam como arma principal por ser peso e tamanho compatíveis com a estrutura corporal Kirage."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série LSW-3 "Companheiro"',
+      descricao: "Apelido curiosamente suave para o que o resto do catálogo Biowl traz. Veio da observação dos próprios fabricantes: pilotos humanoides que recebiam uma _Série LSW-3_ tendiam a formar vínculo emocional com a arma ao longo dos anos. Os Biowl notaram o padrão e começaram a marcar a arma com o apelido, reconhecendo a relação."
+    }
+  ]}
+>
+  Uma arma símbolo, com forte identidade militar.
+</Arma>
+
+### Maça de Estilhaçamento
+
+<Arma
+  equivalencia="Maul"
+  dano="2d6 contundente"
+  maestria="Topple"
+  propriedades={["Pesada", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Jarðarhamar",
+      traducao: "Martelo da Terra",
+      descricao: "Arma ritual Aesir usada em execuções formais; o golpe era dado com o alvo ajoelhado, e a cabeça do martelo marca o chão depois. Hoje a execução formal é prática rara, e a _Jarðarhamar_ migrou para combate geral, mas o peso simbólico permanece. Aesir que carregam uma em batalha são vistos com respeito desconfortável."
+    },
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Britador de Eta Carinae",
+      descricao: "Nomeado em homenagem ao sistema Eta Carinae. O britador foi originalmente ferramenta de demolição, e a adaptação para combate preservou o peso e a forma. Engenheiros Anões às vezes ainda usam a mesma peça para quebrar detritos entre um combate e outro. A arma não foi redesenhada pra violência, apenas reaproveitada."
+    }
+  ]}
+>
+  Martelo gigante de duas mãos, com peso absurdo e impacto proporcional.
+</Arma>
+
+### Estrela da Manhã
+
+<Arma
+  equivalencia="Morningstar"
+  dano="1d8 perfurante"
+  maestria="Sap"
+  fabricantes={[
+    {
+      povo: "Kirage",
+      nome: "Tsrk-vrr",
+      traducao: "Flor de Ponta",
+      descricao: "Os Kirage enxergam na estrela da manhã a mesma geometria de certas estruturas biológicas de colmeia — espículas dispostas radialmente. A associação é cultural, não funcional. Exilados que portam uma carregam inconscientemente um símbolo que os conecta ao que deixaram."
+    }
+  ]}
+>
+  Maça com cabeça cravejada de espículas perfurantes. Útil contra alvos com armadura feita para deflexão em vez de absorção.
+</Arma>
+
+### Pique Longo
+
+<Arma
+  equivalencia="Pike"
+  dano="1d10 perfurante"
+  maestria="Push"
+  propriedades={["Pesada", "Alcance", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Langspjót",
+      traducao: "Lança Longa",
+      descricao: "Arma de defesa de convés em abordagem: a frota Aesir tradicionalmente posiciona piqueiros no convés exterior para dificultar abordagem inimiga. Combate com pique exige disciplina coletiva; Aesir piqueiros treinam em linha e raramente operam solo."
+    }
+  ]}
+>
+  Haste longuíssima com ponta perfurante. O ataque pode empurrar, mantendo formações inimigas à distância.
+</Arma>
+
+### Florete Monomolecular
+
+<Arma
+  equivalencia="Rapier"
+  dano="1d8 perfurante"
+  maestria="Vex"
+  propriedades={["Acuidade"]}
+  fabricantes={[
+    {
+      povo: "Kirage",
+      nome: "Tzz-kk",
+      traducao: "Pico Fino",
+      descricao: "Arma natural para a fisiologia Kirage: a precisão de perfuração é condizente ao modo como as suas mandíbulas originais operavam em predação rápida. Exilados treinados em _Tzz-kk_ frequentemente demonstram velocidade desconfortável para humanoides que duelam com eles."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série FLR-2 "Agulheiro"',
+      descricao: "Um apelido operacional pragmático. Os Biowl fabricantes notaram que o cabo precisava ser ajustado individualmente por portador. A linha _FLR-2_ vem com calibração semi-customizável, rara em produção Biowl, reconhecendo que essa arma pede relação pessoal."
+    }
+  ]}
+>
+  Arma de perfuração pura. Lâmina fina com fio que opera em escala molecular, capaz de cortar tecidos e polímeros macios sem aplicar força significativa.
+</Arma>
+
+### Cimitarra Leve
+
+<Arma
+  equivalencia="Scimitar"
+  dano="1d6 cortante"
+  maestria="Nick"
+  propriedades={["Acuidade", "Leve"]}
+  fabricantes={[
+    {
+      povo: "Kirage",
+      nome: "Vrk-srr",
+      traducao: "Curva que Morde",
+      descricao: "A cimitarra é uma das armas que melhor se adapta à estrutura articular Kirage, pois o movimento de corte curvo é natural para os membros da raça. Soldados Kirage tradicionalmente usavam em pares; Exilados frequentemente mantêm o par mesmo quando uma unidade seria suficiente."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série CMR-1 "Leque"',
+      descricao: "O apelido vem do movimento característico de operadores treinados: a cimitarra abre em arco rápido, parecendo um leque se desdobrando. A linha _CMR-1_ foi pensada para tripulação de nave que precisa lutar em corredores — lâmina curta, pouco espaço necessário."
+    }
+  ]}
+/>
+
+### Espada Curta
+
+<Arma
+  equivalencia="Shortsword"
+  dano="1d6 perfurante"
+  maestria="Vex"
+  propriedades={["Acuidade", "Leve"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Knífsverð",
+      traducao: "Faca Espada",
+      descricao: "A _Knífsverð_ é vista culturalmente como faca grande, não espada pequena. Aesir tradicionalmente a carregam no cinto oposto ao da _Langrsverð_, como arma secundária de combate próximo."
+    },
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Lâmina de Procyon",
+      descricao: "Linha industrial de baixo custo, produzida em volume para tripulação civil. Os anões reservam nomes de estrelas calmas para equipamento civil."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série SSW-2 "Reserva"',
+      descricao: "O apelido é literal: a _Série SSW-2_ foi fabricada para ser arma de reserva, carregada sempre junto de uma arma principal. Os Biowl fabricantes sabiam que a maioria dos operadores nunca ia usar a _Reserva_ em primeira mão, e calibraram a arma pra durar décadas na bainha, raramente usada, sempre pronta."
+    }
+  ]}
+/>
+
+### Tridente
+
+<Arma
+  equivalencia="Trident"
+  dano="1d8 perfurante"
+  maestria="Topple"
+  propriedades={["Arremesso (20/60)", "Versátil (1d10)"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Þríspjót",
+      traducao: "Lança Três",
+      descricao: "Arma tradicional de abordagem em frota Aesir: a versão arremessável era usada para prender oponente no próprio convés antes da chegada da tropa principal. Hoje, Aesir frequentemente a usam em combate corpo a corpo, mas a associação com abordagem persiste culturalmente."
+    },
+    {
+      povo: "Kirage",
+      nome: "Tsk-tsk-tsk",
+      traducao: "Três que Pega",
+      descricao: "A repetição tripla na vibração reflete a estrutura da arma. Kirage Soldados usavam em abordagens de nave inimiga por razões similares às dos Aesir, mas com coordenação de colmeia — múltiplos tridentes arremessados simultaneamente em padrão vibrante."
+    }
+  ]}
+/>
+
+### Martelo de Guerra
+
+<Arma
+  equivalencia="Warhammer"
+  dano="1d8 contundente"
+  maestria="Push"
+  propriedades={["Versátil (1d10)"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Martelo de Procyon",
+      descricao: "Ferramenta arma dos engenheiros de estação orbital. A transição ferramenta para arma foi tão gradual que alguns Anões não fazem distinção entre os usos."
+    }
+  ]}
+>
+  Versão de uma mão do martelo pesado. O ataque causa impacto que afasta o alvo, criando espaço para o próximo golpe ou reposicionamento.
+</Arma>
+
+### Picareta de Guerra
+
+<Arma
+  equivalencia="War Pick"
+  dano="1d8 perfurante"
+  maestria="Sap"
+  propriedades={["Versátil (1d10)"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Picareta de Bellatrix",
+      descricao: "Linha industrial primária. A picareta é a arma que mais claramente carrega a história de ferramenta reproposta para combate. Anões frequentemente carregam uma por razões operacionais, e o uso em combate é quase coincidência."
+    }
+  ]}
+>
+  Versão militar de picareta de mineração, com ponta perfurante reforçada.
+</Arma>
+
+### Chicote de Tração
+
+<Arma
+  equivalencia="Whip"
+  dano="1d4 cortante"
+  maestria="Slow"
+  propriedades={["Acuidade", "Alcance"]}
+  fabricantes={[
+    {
+      povo: "Biowl",
+      nome: 'Série WHP-3 "Coleira"',
+      descricao: "O apelido vem do uso original: o chicote Biowl foi fabricado para conter fauna hostil em planetas de fronteira, não para combate contra humanoides. O uso em combate é uma adaptação necessária."
+    }
+  ]}
+>
+  Arma incomum, mas funcional. O enrolamento do chicote em volta do alvo reduz a mobilidade.
+</Arma>

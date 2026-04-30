@@ -1,0 +1,131 @@
+---
+title: Armas Marciais a Distância
+description: Arsenal marcial de combate a distância — zarabatanas, bestas, arcos e armas de fogo cinéticas.
+---
+
+import Arma from '@/components/Arma.astro';
+
+### Zarabatana de Precisão
+
+<Arma
+  equivalencia="Blowgun"
+  dano="1 perfurante"
+  maestria="Vex"
+  propriedades={["Munição (25/100)", "Carregamento"]}
+  fabricantes={[
+    {
+      povo: "Kirage",
+      nome: "Ssk-k",
+      traducao: "Sopra Agulha",
+      descricao: "A zarabatana é tecnologia Kirage adaptada — evolução de mecanismo biológico que algumas castas ancestrais usavam para marcar território. A versão portátil é simplificação cultural. Exilados que usam _Ssk-k_ frequentemente também sabem preparar venenos tradicionais de colmeia."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série BGN-1 "Sussurro"',
+      descricao: "Apelido vem do som quase inexistente do disparo. Linha de produção especializada para missões furtivas; incomum no arsenal Biowl geral."
+    }
+  ]}
+>
+  Arma estreita que dispara agulhas envenenadas por sopro controlado. O impacto é absurdamente baixo, mas o seu valor está no veneno que ela carrega.
+</Arma>
+
+### Besta de Mão
+
+<Arma
+  equivalencia="Hand Crossbow"
+  dano="1d6 perfurante"
+  maestria="Vex"
+  propriedades={["Munição (30/120)", "Leve", "Carregamento"]}
+  fabricantes={[
+    {
+      povo: "Biowl",
+      nome: 'Série HXB-4 "Gêmea"',
+      descricao: "Seu apelido veio da prática operacional comum: quem porta uma _HXB-4_ geralmente porta duas, uma em cada mão. Os Biowl fabricantes padronizaram a linha assumindo uso em par, mesmo que uma unidade isolada funcione normalmente."
+    }
+  ]}
+>
+  Besta pequena, operável com uma mão.
+</Arma>
+
+### Besta Pesada
+
+<Arma
+  equivalencia="Heavy Crossbow"
+  dano="1d10 perfurante"
+  maestria="Push"
+  propriedades={["Munição (100/400)", "Pesada", "Carregamento", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Balestra de Cerco de Betelgeuse",
+      descricao: "Seu nome carrega peso simbólico — Betelgeuse é uma estrela em processo de morte iminente, uma imagem de poder prestes a se descarregar."
+    },
+    {
+      povo: "Aesir",
+      nome: "Skotstokkr",
+      traducao: "Tronco de Tiro",
+      descricao: "Aesir raramente fabricam bestas próprias, pois preferem a cultura de arco, mas a _Skotstokkr_ existe como exceção, adotada em frotas que tiveram contato prolongado com cultura Anã e passaram a preferir a previsibilidade da engrenagem."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série HCB-3 "Parede"',
+      descricao: "O apelido vem do uso defensivo: a _HCB-3_ era fabricada para tripulação de ponte defender posição fixa contra abordadores. A linha otimiza precisão a longa distância em detrimento de peso — a besta pesa ainda mais que o modelo Anão, o que torna transporte operacional difícil, mas em posição fixa é devastadora."
+    }
+  ]}
+/>
+
+### Arco Longo Orbital
+
+<Arma
+  equivalencia="Longbow"
+  dano="1d8 perfurante"
+  maestria="Slow"
+  propriedades={["Munição (150/600)", "Pesada", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Langvindr",
+      traducao: "Vento Longo",
+      descricao: "Arco cerimonial e operacional das frotas Aesir, usado principalmente por caçadores em planetas ainda habitáveis ou por arqueiros de convés em abordagem inversa. _Langvindr_ é uma arma hereditária — cada geração adiciona reparos, reforços, e eventualmente passa adiante."
+    }
+  ]}
+/>
+
+### Mosquete Cinético
+
+<Arma
+  equivalencia="Musket"
+  dano="1d12 perfurante"
+  maestria="Slow"
+  propriedades={["Munição (40/120)", "Carregamento", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Rifle Cinético de Arcturus",
+      descricao: "Linha industrial padrão. Arcturus é uma estrela gigante alaranjada, visível e familiar — seu nome sugere confiabilidade e presença estável. O _Rifle de Arcturus_ é peça comum em frotas sobreviventes, fabricada ainda em pequena escala em estações orbitais que preservaram capacidade de produção de pólvora sintética."
+    }
+  ]}
+>
+  Rifle de cano longo, com disparo de projétil cinético por combustão interna.
+</Arma>
+
+### Pistola Cinética
+
+<Arma
+  equivalencia="Pistol"
+  dano="1d10 perfurante"
+  maestria="Vex"
+  propriedades={["Munição (30/90)", "Carregamento"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Pistola Cinética de Altair",
+      descricao: "Contraparte do _Rifle de Arcturus_ em formato pessoal. É uma arma de uso civil e voltada para autodefesa."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série PST-2 "Parceira"',
+      descricao: "O apelido tem peso similar ao _Companheiro_ da Série LSW-3: os Biowl fabricantes notaram que operadores desenvolviam vínculo com a pistola, carregando a mesma peça por décadas, reparando em vez de substituir. A linha PST-2 tem calibração para durabilidade máxima em detrimento de precisão absoluta."
+    }
+  ]}
+/>
