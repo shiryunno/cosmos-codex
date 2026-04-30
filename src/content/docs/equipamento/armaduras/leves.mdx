@@ -3,28 +3,27 @@ title: Armaduras Leves
 description: Proteção mínima e máxima mobilidade. Traje estofado, couro curtido e couro cravejado.
 ---
 
-import Armadura from '../../../../components/Armadura.astro';
+import Armadura from '@/components/Armadura.astro';
 
-<Armadura
-  nome="Traje Estofado"
-  equivalencia="Padded Armor (11 + Des)"
->
+### Traje Estofado
+
+<Armadura equivalencia="Padded Armor (11 + Des)">
   Um acolchoado básico de camadas de tecido e enchimento. A versão comum em frotas sobreviventes é feita de retalhos de uniformes antigos, sem especificação industrial nenhuma. Quem usa um Traje Estofado frequentemente o usa porque é o que encontrou, não o que escolheu.
 
   O Traje Estofado circula sem origem clara: qualquer pessoa com agulha, tecido e paciência fabrica o seu. Tripulações civis em planetas de fronteira produzem Trajes Estofados em larga escala informal, e o objeto não carrega identidade cultural específica.
 </Armadura>
 
-<Armadura
-  nome="Couro Curtido"
-  equivalencia="Leather Armor (11 + Des)"
->
+### Couro Curtido
+
+<Armadura equivalencia="Leather Armor (11 + Des)">
   Peitoral e ombreiras de couro endurecido por fervura em óleo, com o resto do conjunto em material mais flexível. É uma armadura de sobrevivência, não dedicada para combate.
 
   Couro Curtido circula como armadura genérica, fabricado em pequenas oficinas em qualquer planeta com fauna capaz de fornecer o material. É a armadura para caçador, patrulheiro rural ou mercador de caravana que atravessa regiões perigosas.
 </Armadura>
 
+### Couro Cravejado
+
 <Armadura
-  nome="Couro Cravejado"
   equivalencia="Studded Leather Armor (12 + Des)"
   fabricantes={[
     {

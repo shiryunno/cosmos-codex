@@ -1,0 +1,187 @@
+---
+title: Armas Simples Corpo a Corpo
+description: Arsenal básico de combate próximo — clavas, adagas, martelos, maças e lanças.
+---
+
+import Arma from '@/components/Arma.astro';
+
+### Clava de Impacto
+
+<Arma
+  equivalencia="Club"
+  dano="1d4 contundente"
+  maestria="Slow"
+  propriedades={["Leve"]}
+  fabricantes={[
+    {
+      povo: "Kirage",
+      nome: "Szzt-vrek",
+      traducao: "Osso Curto",
+      descricao: "Kirage Soldados usam versões equivalentes como treinamento inicial para aqueles nascidos recentes, antes de receberem armamento específico da casta. Exilados frequentemente guardam a sua por sentimentalismo, mesmo após adquirir armas melhores."
+    }
+  ]}
+>
+  A base do arsenal improvisado. Um cilindro de polímero denso com núcleo metálico — o que resta depois que uma ferramenta industrial qualquer foi reaproveitada para combate. Todo sobrevivente já carregou uma em algum momento; a maioria abandona quando encontra algo melhor, mas raramente joga fora.
+</Arma>
+
+### Adaga Monomolecular
+
+<Arma
+  equivalencia="Dagger"
+  dano="1d4 perfurante"
+  maestria="Nick"
+  propriedades={["Acuidade", "Leve", "Arremesso (20/60)"]}
+  fabricantes={[
+    {
+      povo: "Biowl",
+      nome: 'Série DKR-3 "Fino"',
+      descricao: "Linha de produção em massa voltada para tripulação civil, não combatente. O apelido _Fino_ veio dos próprios operadores Biowl que fabricavam a arma — a única peça que saía da linha com massa o suficiente para o sensor de qualidade classificar como \"subdimensionada\". O termo pegou, e as unidades começaram a marcar o apelido na própria carcaça da ferramenta."
+    }
+  ]}
+>
+  Uma lâmina curta cujo fio opera em escala molecular, capaz de cortar tecidos e polímeros macios sem aplicar força significativa. Fácil de esconder, fácil de arremessar, fácil de perder. Quase todo sobrevivente carrega pelo menos uma; raramente é a arma principal, mas quase sempre é a arma de último recurso.
+</Arma>
+
+### Martelo Cinético
+
+<Arma
+  equivalencia="Greatclub"
+  dano="1d8 contundente"
+  maestria="Push"
+  propriedades={["Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Martelo de Sirius",
+      descricao: "Parte da linha de produção básica dos armeiros orbitais, nomeada em homenagem a Sirius não por significado ritual, mas por conveniência: Sirius foi a primeira estrela sobre a qual a linha foi testada com sucesso, e o nome pegou. Anões frequentemente usam este martelo como ferramenta de forja e como arma, sem distinção clara entre os dois usos."
+    }
+  ]}
+>
+  Um martelo pesado de cabo longo, com núcleo que amplifica levemente o impacto de cada golpe — versão simplificada dos princípios de reverberação que armas mais desenvolvidas possuem. Útil, lento e honesto.
+</Arma>
+
+### Machadinha Vibratória
+
+<Arma
+  equivalencia="Handaxe"
+  dano="1d6 cortante"
+  maestria="Vex"
+  propriedades={["Leve", "Arremesso (20/60)"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Smidrøx",
+      descricao: "Machadinha curta que também serve para arremesso, usada tanto em combate próximo quanto como ferramenta de abordagem. O fio vibra em frequência alta ao impacto, mordendo matéria de forma que o seu peso não justificaria. Jovens Aesir recebem uma ao completar o primeiro ciclo de caça na frota. Carregar a própria _Smidrøx_ é sinal de maioridade."
+    }
+  ]}
+/>
+
+### Dardo Pesado
+
+<Arma
+  equivalencia="Javelin"
+  dano="1d6 perfurante"
+  maestria="Vex"
+  propriedades={["Arremesso (20/60)"]}
+  fabricantes={[
+    {
+      povo: "Kirage",
+      nome: "Vrrsk-k",
+      traducao: "Agulha que Voa",
+      descricao: "Soldados Kirage carregam em cintos feitos para liberar múltiplos dardos em sequência. Exilados que preservam a técnica ainda usam a configuração original de cinto, mesmo fora da casta."
+    }
+  ]}
+>
+  Versão encorpada do dardo lançado, com ponta perfurante e haste balanceada para arremesso a distância média. Funcional, descartável e produzido em massa.
+</Arma>
+
+### Marreta Leve
+
+<Arma
+  equivalencia="Light Hammer"
+  dano="1d4 contundente"
+  maestria="Slow"
+  propriedades={["Leve", "Arremesso (20/60)"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Marreta de Altair",
+      descricao: "Ferramenta padrão dos estaleiros orbitais. A transição para a arma foi gradual e nunca oficializada — as marretas em uso de combate ainda carregam marcas de calibração industrial no cabo."
+    }
+  ]}
+>
+  Martelo pequeno, de uma mão, próprio para combate próximo ou arremesso em curta distância. Arma improvisada comum entre tripulações de nave. Era uma ferramenta antes de ser arma.
+</Arma>
+
+### Maça de Reverberação
+
+<Arma
+  equivalencia="Mace"
+  dano="1d6 contundente"
+  maestria="Sap"
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Hamarr-þruma",
+      descricao: "Arma cerimonial adotada por Jarls em assembleia de frota antes de se tornar arma de campo. O nome significa aproximadamente \"martelo trovão\", referência ao som característico do impacto. Portar uma _Hamarr-þruma_ em ocasião formal Aesir ainda carrega significado político."
+    }
+  ]}
+>
+  Maça de cabeça densa com cavidades internas que concentram o impacto num padrão de pulso — uma porrada normal causa o estalo característico de choque interno que desorienta brevemente quem é atingido.
+</Arma>
+
+### Bastão Articulado
+
+<Arma
+  equivalencia="Quarterstaff"
+  dano="1d6 contundente"
+  maestria="Topple"
+  propriedades={["Versátil (1d8)"]}
+  fabricantes={[
+    {
+      povo: "Kirage",
+      nome: "Tk-tk-vrr",
+      traducao: "Três-que-Dobra",
+      descricao: "Arma de treinamento dos Soldados, e usada por Rainhas em demonstrações ritualísticas que também funcionavam como exercício de combate. Exilados frequentemente carregam a sua como lembrança do tempo de colmeia."
+    }
+  ]}
+>
+  Bastão longo com juntas rígidas e flexíveis que permitem aplicação de alavanca para derrubar alvos. Versátil de usar, e um golpe bem aplicado pode tirar o oponente do solo.
+</Arma>
+
+### Foice de Ceifa
+
+<Arma
+  equivalencia="Sickle"
+  dano="1d4 cortante"
+  maestria="Nick"
+  propriedades={["Leve"]}
+  fabricantes={[
+    {
+      povo: "Biowl",
+      nome: 'Série AGR-1 "Colheita"',
+      descricao: "A primeira série da linha agrícola Biowl, reproposta para combate em regiões onde frotas perderam acesso a armas dedicadas. O apelido vem do uso original, não do combate — e os operadores Biowl que fabricavam nunca mudaram, mesmo depois que a arma passou a matar mais que a colher."
+    }
+  ]}
+>
+  Foice leve de lâmina curva, originalmente ferramenta de colheita agrícola. Sobreviveu como arma por ser barata de fabricar e por ter um fio que corta razoavelmente bem em movimento lateral.
+</Arma>
+
+### Lança
+
+<Arma
+  equivalencia="Spear"
+  dano="1d6 perfurante"
+  maestria="Sap"
+  propriedades={["Arremesso (20/60)", "Versátil (1d8)"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Gungnirarf",
+      traducao: "Lança Herdada",
+      descricao: "Produção aberta nas frotas Aesir: qualquer forjador da frota pode fabricar uma, e cada Jarl eleito recebe uma em sua posse. A arma simbolicamente liga o portador à linhagem de liderança, mesmo que a peça física seja indistinguível de qualquer outra _Gungnirarf_ da frota."
+    }
+  ]}
+>
+  Uma haste longa com ponta perfurante reforçada, balanceada para arremesso e combate próximo simultaneamente.
+</Arma>

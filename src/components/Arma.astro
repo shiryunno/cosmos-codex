@@ -8,10 +8,13 @@ interface Fabricante {
 
 interface Props {
 	equivalencia: string;
+	dano: string;
+	maestria: string;
+	propriedades?: string[];
 	fabricantes?: Fabricante[];
 }
 
-const { equivalencia, fabricantes } = Astro.props;
+const { equivalencia, dano, maestria, propriedades, fabricantes } = Astro.props;
 
 function renderInline(text: string): string {
 	return text
@@ -23,15 +26,21 @@ function renderInline(text: string): string {
 }
 ---
 
-<section class="armadura">
-	<p class="armadura-equiv">{equivalencia}</p>
+<section class="arma">
+	<p class="arma-equiv">
+		{equivalencia} · {dano}
+		{propriedades && propriedades.length > 0 && <span> · {propriedades.join(', ')}</span>}
+		{' '}· Maestria: {maestria}
+	</p>
 
-	<div class="armadura-corpo">
-		<slot />
-	</div>
+	{Astro.slots.has('default') && (
+		<div class="arma-corpo">
+			<slot />
+		</div>
+	)}
 
 	{fabricantes && fabricantes.length > 0 && (
-		<div class="armadura-fabricantes">
+		<div class="arma-fabricantes">
 			<p class="fabricantes-label">Fabricantes</p>
 			{fabricantes.map((f) => (
 				<div class="fabricante">
@@ -50,19 +59,19 @@ function renderInline(text: string): string {
 </section>
 
 <style>
-	.armadura {
+	.arma {
 		margin-bottom: 2.5rem;
 		padding-bottom: 2rem;
 		border-bottom: 1px solid var(--sl-color-gray-5);
 	}
 
-	.armadura:last-child {
+	.arma:last-child {
 		border-bottom: none;
 		margin-bottom: 0;
 		padding-bottom: 0;
 	}
 
-	.armadura-equiv {
+	.arma-equiv {
 		color: var(--sl-color-gray-3);
 		font-style: italic;
 		margin-top: 0;
@@ -70,7 +79,7 @@ function renderInline(text: string): string {
 		font-size: 0.875em;
 	}
 
-	.armadura-corpo {
+	.arma-corpo {
 		margin-bottom: 1.25rem;
 	}
 

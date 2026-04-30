@@ -52,6 +52,10 @@ export default defineConfig({
 								{ label: 'Escudos', link: 'equipamento/armaduras/escudos' },
 							],
 						},
+						{
+							label: 'Armas',
+							autogenerate: { directory: 'equipamento/armas' },
+						},
 					],
 				},
 			],

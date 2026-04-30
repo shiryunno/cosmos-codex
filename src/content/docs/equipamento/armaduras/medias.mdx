@@ -3,19 +3,19 @@ title: Armaduras Médias
 description: Equilíbrio entre proteção e mobilidade. Peles, malhas curtas, escamas e peitorais para combatentes versáteis.
 ---
 
-import Armadura from '../../../../components/Armadura.astro';
+import Armadura from '@/components/Armadura.astro';
 
-<Armadura
-  nome="Armadura de Pele"
-  equivalencia="Hide Armor (12 + Des, máx 2)"
->
+### Armadura de Pele
+
+<Armadura equivalencia="Hide Armor (12 + Des, máx 2)">
   Peles grossas e couro sobreposto em camadas. A armadura mais rudimentar da categoria média, usada por tribos de fronteira, povos que perderam acesso a manufatura metálica, ou sobreviventes isolados em planetas com fauna abundante.
 
   A Armadura de Pele é produto de necessidade: onde existe fauna grande, pode-se fabricar uma Armadura de Pele. Quem a veste em ambiente mais civilizado frequentemente é visto como vindo de longe, ou como pessoa de origem humilde.
 </Armadura>
 
+### Cota de Malha Curta
+
 <Armadura
-  nome="Cota de Malha Curta"
   equivalencia="Chain Shirt (13 + Des, máx 2)"
   fabricantes={[
     {
@@ -29,8 +29,9 @@ import Armadura from '../../../../components/Armadura.astro';
   Anéis de metal entrelaçados, formando vestimenta que cobre torso e parte dos braços, usada sob camadas de roupa ou couro para disfarçar. Os anéis são de ligas leves, desenvolvidas antes do colapso para oficiais que precisavam de proteção sem comprometer aparência civil.
 </Armadura>
 
+### Escama Metálica
+
 <Armadura
-  nome="Escama Metálica"
   equivalencia="Scale Mail (14 + Des, máx 2)"
   fabricantes={[
     {
@@ -45,8 +46,9 @@ import Armadura from '../../../../components/Armadura.astro';
   As lâminas sobrepostas funcionam por princípio de **distribuição progressiva**: um golpe atinge múltiplas escamas simultaneamente, e cada uma absorve fração do impacto antes de transmitir ao couro de base. O design foi desenvolvido para combate contra armamento cortante pré-industrial, e sobrevive até hoje porque continua eficaz contra armas de fogo de baixa velocidade. O padrão de distribuição funciona razoavelmente bem também contra impactos cinéticos, embora a tecnologia original não previsse isso.
 </Armadura>
 
+### Peitoral de Placa
+
 <Armadura
-  nome="Peitoral de Placa"
   equivalencia="Breastplate (14 + Des, máx 2)"
   fabricantes={[
     {
@@ -61,8 +63,9 @@ import Armadura from '../../../../components/Armadura.astro';
   O Peitoral de Placa não é apenas metal conformado. O núcleo tem camada de algum tipo de **compósito amortecedor** entre a placa externa e o couro interno — material desenvolvido pelos Anões para redistribuir impacto em torno dos pontos vitais. Um golpe que atingiria o coração é redirecionado para o externo ou para as costelas, onde o dano é menos imediatamente letal. A tecnologia é antiga mas ainda funcional, e explica por que o Peitoral continua presente no arsenal sobrevivente.
 </Armadura>
 
+### Meia-Armadura
+
 <Armadura
-  nome="Meia-Armadura"
   equivalencia="Half Plate Armor (15 + Des, máx 2)"
   fabricantes={[
     {

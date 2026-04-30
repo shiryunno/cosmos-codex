@@ -3,19 +3,19 @@ title: Armaduras Pesadas
 description: Proteção máxima ao custo de mobilidade e força mínima exigida. Cotas, talas e placas para linha de frente.
 ---
 
-import Armadura from '../../../../components/Armadura.astro';
+import Armadura from '@/components/Armadura.astro';
 
-<Armadura
-  nome="Cota de Anéis"
-  equivalencia="Ring Mail (14)"
->
+### Cota de Anéis
+
+<Armadura equivalencia="Ring Mail (14)">
   Couro com anéis metálicos pesados costurados sobre ele. Os anéis reforçam contra golpes de espadas e machados.
 
   As civilizações sobreviventes raramente fabricam uma Cota de Anéis por escolha — ela surge como refação de armaduras melhores que se degradaram, ou como produção improvisada em planetas sem acesso a ligas mais sofisticadas. Carregar uma Cota de Anéis é sinal de escassez.
 </Armadura>
 
+### Cota de Malha
+
 <Armadura
-  nome="Cota de Malha"
   equivalencia="Chain Mail (16)"
   fabricantes={[
     {
@@ -31,8 +31,9 @@ import Armadura from '../../../../components/Armadura.astro';
   A Cota de Malha funciona por **dissipação distribuída**: os milhares de anéis individuais transferem impacto uns aos outros, transformando golpe concentrado em pressão espalhada. Isso é particularmente eficaz contra armas cortantes, que dependem de fio aplicado em ponto único. Contra armas contundentes, a dissipação é menos eficiente — e daí vem a camada acolchoada por baixo, que complementa com absorção física o que a malha não consegue absorver por distribuição.
 </Armadura>
 
+### Armadura de Talas
+
 <Armadura
-  nome="Armadura de Talas"
   equivalencia="Splint Armor (17)"
   fabricantes={[
     {
@@ -47,8 +48,9 @@ import Armadura from '../../../../components/Armadura.astro';
   As tiras metálicas estreitas são flexíveis onde precisam, e rígidas onde precisam. Esse princípio é simples mas difícil de executar, e explica o custo de fabricação relativamente alto. Cada tira tem densidade calibrada para a região do corpo que cobre: peitoral e costas recebem tiras mais espessas, articulações recebem tiras mais finas para permitir movimento. A cota de malha entre as tiras, longe de ser decorativa, é a camada que evita que golpes entrem _entre_ as tiras nas articulações. Uma Armadura de Talas mal ajustada tem ponto fraco característico nos flancos, e guerreiros experientes sabem mirar ali.
 </Armadura>
 
+### Placa Completa
+
 <Armadura
-  nome="Placa Completa"
   equivalencia="Plate Armor (18)"
   fabricantes={[
     {

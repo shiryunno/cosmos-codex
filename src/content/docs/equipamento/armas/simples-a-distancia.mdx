@@ -1,0 +1,80 @@
+---
+title: Armas Simples a Distância
+description: Arsenal básico de combate a distância — agulhas lançadas, bestas, arcos e estilingues.
+---
+
+import Arma from '@/components/Arma.astro';
+
+### Agulha Lançada
+
+<Arma
+  equivalencia="Dart"
+  dano="1d4 perfurante"
+  maestria="Vex"
+  propriedades={["Acuidade", "Arremesso (20/60)"]}
+  fabricantes={[
+    {
+      povo: "Biowl",
+      nome: 'Série NDL-2 "Enxame"',
+      descricao: "Produzida em lotes de centenas; o apelido _Enxame_ vem da prática operacional de jogar uma bandeja inteira de agulhas de uma só vez. Biowl fabricantes da linha NDL relatam que os padrões de fabricação foram calibrados para aceitar variação de peso maior que o normal — uma concessão consciente para escalar produção em detrimento de precisão individual."
+    }
+  ]}
+>
+  Projétil leve de arremesso, fabricado em massa como munição descartável. Os operadores experientes carregam um cinto inteiro e distribuem os arremessos em sequência rápida.
+</Arma>
+
+### Besta de Engrenagem
+
+<Arma
+  equivalencia="Light Crossbow"
+  dano="1d8 perfurante"
+  maestria="Slow"
+  propriedades={["Munição (80/320)", "Carregamento", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Balestra de Procyon",
+      descricao: "Produzida em volume pelos armeiros orbitais como arma de autodefesa civil. Procyon é estrela relativamente calma, escolhida para nomear a linha justamente por oposição às séries militares nomeadas por estrelas moribundas — os Anões queriam que a balestra carregasse conotação civil, não de guerra."
+    }
+  ]}
+>
+  Um mecanismo de disparo por engrenagem tensionada, usando virotes curtos de metal denso. Possui recarga lenta, pois as engrenagens precisam voltar à posição armada, mas cada disparo é previsível e preciso. Popular entre sobreviventes civis que não têm treinamento em arma de fogo mas querem algo melhor que um arco.
+</Arma>
+
+### Arco Orbital Curto
+
+<Arma
+  equivalencia="Shortbow"
+  dano="1d6 perfurante"
+  maestria="Vex"
+  propriedades={["Munição (80/320)", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Vindskot",
+      traducao: "Tiro do Vento",
+      descricao: "Arco tradicional das frotas Aesir, fabricado individualmente por cada arqueiro com materiais herdados de caçadores anteriores. A arma carrega linhagem: um _Vindskot_ bem preservado pode ter componentes de várias gerações da mesma família. Isso torna a arma profundamente pessoal. Perder um _Vindskot_ hereditário é luto real."
+    }
+  ]}
+>
+  O arco curto sobreviveu como arma porque é tecnologia que nunca quebra. Uma haste composta sob tensão, corda de fibra sintética e flechas que podem ser fabricados com resto de qualquer material rígido. Em frotas que perderam acesso a munição industrial, o arco é o que resta quando o resto falha.
+</Arma>
+
+### Estilingue Monofio
+
+<Arma
+  equivalencia="Sling"
+  dano="1d4 contundente"
+  maestria="Slow"
+  propriedades={["Munição (30/120)"]}
+  fabricantes={[
+    {
+      povo: "Kirage",
+      nome: "Ssk-fli",
+      traducao: "Fio que Estala",
+      descricao: "Kirage Exilados que passam muito tempo em planetas de fronteira frequentemente improvisam estes estilingues a partir de componentes de nave abandonada. Não há produção centralizada; cada Exilado monta o próprio."
+    }
+  ]}
+>
+  Estilingue simplificado, usado quase exclusivamente em ambientes onde nenhuma tecnologia mais sofisticada está disponível. Fio de alta tensão com bolsa para projétil improvisado — pedra, fragmento metálico, qualquer coisa densa. É uma arma de último recurso.
+</Arma>
