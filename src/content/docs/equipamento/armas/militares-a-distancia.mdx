@@ -1,0 +1,274 @@
+---
+title: Armas Militares a Distância
+description: Arsenal militar de combate a distância — pistolas, rifles, dispersores de éter e armamento de aniquilação.
+---
+
+import Arma from '@/components/Arma.astro';
+
+### Pistola Automática
+
+<Arma
+  equivalencia="Automatic Pistol"
+  dano="2d6 perfurante"
+  maestria="Vex"
+  propriedades={["Munição (15/45)", "Recarga (15)"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Repetidora de Altair",
+      descricao: "A _Repetidora de Altair_ foi de ampla produção, e é uma das armas modernas mais encontráveis em mercados sobreviventes."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série APS-3 "Chuva"',
+      descricao: "O apelido descreve o padrão de disparos contínuos: chuva de projéteis em cadência acelerada. Linha industrial voltada para tripulação de convés em conflito de abordagem."
+    }
+  ]}
+>
+  Arma de fogo de uma mão com carregador interno permitindo múltiplos disparos sem recarga manual. São quinze tiros antes de esgotar a munição. Popular entre oficiais de tripulação que precisavam de armamento discreto e confiável. Fácil de esconder, fácil de manter, com munição padronizada.
+</Arma>
+
+### Rifle de Caça
+
+<Arma
+  equivalencia="Hunting Rifle"
+  dano="2d10 perfurante"
+  maestria="Slow"
+  propriedades={["Munição (24/72)", "Recarga (5)", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Rifle de Precisão de Arcturus",
+      descricao: "A família de equipamentos Arcturus é a linha de precisão Anã. Anões experientes preferem reconhecer a arma pela família de nomes antes de ver estatísticas."
+    },
+    {
+      povo: "Aesir",
+      nome: "Veiðiskotr",
+      traducao: "Tiro de Caça",
+      descricao: "Os Aesir importaram o rifle de caça dos Anões, como outras tecnologias de fogo, e adaptaram culturalmente: a _Veiðiskotr_ é portada por caçadores veteranos de frotas Aesir que ainda mantêm a tradição de expedição em planetas habitáveis. O nome persiste mesmo quando o uso é militar, porque culturalmente a arma ainda é 'de caça', independente do alvo."
+    }
+  ]}
+>
+  Uma arma desenhada para uso em ambiente aberto, não em combate intenso, mas que sobreviveu como arma operacional para frotas que ainda fazem expedições a superfícies planetárias.
+</Arma>
+
+### Rifle Automático
+
+<Arma
+  equivalencia="Automatic Rifle"
+  dano="2d8 perfurante"
+  maestria="Graze"
+  propriedades={["Munição (24/72)", "Recarga (30)", "Duas Mãos", "Fogo em Rajada"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Rifle de Cerco de Antares",
+      descricao: "Antares indica linha de produção voltada para cerco e defesa fixa. O _Rifle de Cerco de Antares_ era equipamento padrão em defesa de doca de estação orbital contra abordagem. A capacidade de tiros sequenciais rápidos permite conter múltiplos atacantes simultaneamente em acesso estreito."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série ATR-6 "Torrente"',
+      descricao: "O apelido vem do padrão de disparos contínuos. Linha de produção voltada para tripulação de combate pesado; a _Torrente_ era equipamento relativamente comum em frotas de guerra, menos comum em frotas civis."
+    }
+  ]}
+>
+  Uma arma que muda combates. Um Rifle Automático pode pressionar um pelotão inteiro simultaneamente.
+
+  **Fogo em Rajada:** Como ação, o usuário gasta 10 projéteis e escolhe um cubo de 3 metros dentro do alcance normal. Cada criatura no cubo faz um teste de salvaguarda de Destreza (CD 15) ou sofre o dano da arma.
+</Arma>
+
+### Dispersor de Fragmentos
+
+<Arma
+  equivalencia="Shotgun"
+  dano="2d8 perfurante"
+  maestria="Push"
+  propriedades={["Munição (9/27)", "Recarga (2)", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Dispersor de Bellatrix",
+      descricao: "A linha _Dispersor de Bellatrix_ foi equipamento de guarda de câmara de carga em estações orbitais — corredores estreitos, necessidade de parar invasores em curtíssima distância."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série DFR-1 "Varredor"',
+      descricao: "O apelido descreve seu uso tático: varrer corredor, limpar passagem. Uma linha industrial pragmática."
+    }
+  ]}
+>
+  Arma de curta distância que dispara múltiplos projéteis pequenos em cone largo. Devastadora em combate em corredores.
+</Arma>
+
+### Dispersor Pessoal de Éter
+
+<Arma
+  equivalencia="Laser Pistol"
+  dano="3d6 radiante"
+  maestria="Vex"
+  propriedades={["Munição (12/36; Célula de Energia)", "Recarga (50)"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Ljósnefi",
+      traducao: "Punho de Luz",
+      descricao: "Foi adotada pelos oficiais Aesir das últimas frotas de guerra antes do colapso. Culturalmente, o _Ljósnefi_ é tratado como arma de autoridade: os Jarls que lideraram as guerras finais frequentemente portavam um, e o objeto carrega peso simbólico de comando."
+    },
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Dispersor de Mão de Vega",
+      descricao: "A nomenclatura indica linha de produção moderna voltada para equipamento de uso pessoal de alta qualidade. O _Dispersor de Mão de Vega_ foi popular entre oficiais Anões que valorizavam tecnologia recente em vez de tradição industrial antiga."
+    },
+    {
+      povo: "Kirage",
+      nome: "Tzz-ljt",
+      traducao: "Agulha de Brilho",
+      descricao: "A adoção Kirage foi tardia e reservada. O povo Kirage prefere culturalmente armamento mecânico reparável, e o _Tzz-ljt_ depende de células de energia que não podem ser fabricadas em campo. Exilados que portam um frequentemente também carregam uma Pistola Cinética como redundância."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série EPS-2 "Corte"',
+      descricao: "O apelido descreve o efeito visual: o disparo corta o ar num lampejo breve e preciso. Linha industrial voltada para tripulação de alta patente; a _Corte_ era peça de oficial, raramente distribuída a soldado comum."
+    }
+  ]}
+>
+  Dispara pulso de energia radiante derivado de manipulação local do Éther. Uma tecnologia desenvolvida no auge da era pré-colapso, quando o Éther ainda era manipulável em pequena escala sem o risco de atrair corrupção abissal. Hoje, armas como esta operam ainda parcialmente, mas cada disparo carrega risco simbólico de contribuir para o desgaste do que restou.
+</Arma>
+
+### Dispersor de Éter
+
+<Arma
+  equivalencia="Laser Rifle"
+  dano="3d8 radiante"
+  maestria="Slow"
+  propriedades={["Munição (30/90; Célula de Energia)", "Recarga (30)", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Stormljós",
+      traducao: "Luz Tempestade",
+      descricao: "Portado tradicionalmente por arqueiros veteranos Aesir que transicionaram de tecnologia de arco para tecnologia de éter nas últimas décadas pré-colapso. A conexão com arco permanece culturalmente: o _Stormljós_ é operado com a mesma postura cerimonial que o _Vindskot_, e com a mesma concentração silenciosa antes de cada disparo."
+    },
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Dispersor Longo de Rigel",
+      descricao: "Por ser uma estrela de alta luminosidade, Rigel é associada a armamento pesado. O _Dispersor Longo de Rigel_ foi produzido em volume menor que o modelo de mão, mas quem tinha um raramente o trocava."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série ETR-5 "Perfurante"',
+      descricao: "O apelido descreve a função em detrimento do som. A linha industrial era voltada para atiradores especializados; a _Perfurante_ era rara mesmo em frotas de guerra, e é rara em mercados sobreviventes."
+    }
+  ]}
+>
+  A diferença de alcance entre o Dispersor de Éter e o Dispersor Pessoal é o que define seu nicho tático: em combate aberto a longa distância, o rifle domina.
+</Arma>
+
+### Rifle de Aniquilação
+
+<Arma
+  equivalencia="Antimatter Rifle"
+  dano="6d8 necrótico"
+  maestria="Sap"
+  propriedades={["Munição (36/108; Célula de Energia)", "Recarga (2)", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Aesir",
+      nome: "Valtannr",
+      traducao: "Presa do Escolhido Morto",
+      descricao: "Associada a um ritual de escolha no campo de batalha: carregar uma era sinal de autoridade, para decidir quem saía do combate e quem era deixado para Odin."
+    },
+    {
+      povo: "Kirage",
+      nome: "Kzzth-vrr",
+      traducao: "Agulha Que Remove",
+      descricao: "Vibração de colmeia intraduzível em sua forma exata; a tradução aproximada captura a função, não o significado total. Kirage Exilados que carregam uma frequentemente não sabem o nome original e aprenderam o termo humanoide por convivência."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série RVK-9 "Obliterador"',
+      descricao: "O apelido descreve o efeito observado no alvo — matéria simplesmente deixa de existir."
+    }
+  ]}
+>
+  Restam poucos exemplares desses rifles em funcionamento, quase todos em posse de comandantes de frotas sobreviventes. Usar um disparo é desperdiçar uma das poucas cargas que ainda existem.
+
+  Não é uma arma que fere — é uma arma que _remove_. O disparo do Rifle de Aniquilação não deixa ferida nem marca de entrada: a matéria atingida simplesmente deixa de estar ali. Quem sobrevive a um tiro desse rifle frequentemente não sente dor no primeiro momento. Sente frio e ausência. A peça que faltava do corpo não cauteriza; ela nunca esteve lá. Fabricado nas últimas guerras antes do colapso, o rifle opera por dispersão controlada de matéria, e exige células de energia escassas que nenhuma civilização sobrevivente consegue mais produzir.
+</Arma>
+
+
+### Lançador de Plasma Direcional
+
+<Arma
+  equivalencia="Flamethrower"
+  dano="4d6 fogo"
+  maestria="Push"
+  propriedades={["Munição", "Recarga (4)", "Duas Mãos", "Salvaguarda de Destreza CD 15", "Cone 9m"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Cuspidor de Bellatrix",
+      descricao: "Linha de produção industrial pesada da família Bellatrix, usado por guardas de corredor em estações orbitais. A versão Anã é considerada a mais confiável, pois o tanque tem dois sistemas de segurança contra explosão acidental, e os Anões nunca pouparam metal nesse aspecto."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série FLM-3 "Carniceiro"',
+      descricao: "O apelido descreve o efeito visual em alvos múltiplos a curta distância. O _Carniceiro_ foi uma peça comum em frotas de guerra, e ainda aparece relativamente disponível em mercados sobreviventes."
+    }
+  ]}
+>
+  Um tubo metálico fino e longo, com um tanque de combustível pressurizado preso à parte traseira do operador, como uma mochila. Quando ativado, expele jato concentrado de combustível em ignição contínua — plasma direcionado em estado parcialmente ionizado, capaz de derreter armadura média a curta distância.
+
+  Arma de **abertura de cerco** ou **defesa de corredor**. Inútil contra alvo único distante, mas devastador contra um grupo concentrado em curta distância.
+</Arma>
+
+### Lançador de Granadas
+
+<Arma
+  equivalencia="Grenade Launcher"
+  dano="dano por granada"
+  maestria="Slow"
+  propriedades={["Munição (18/36)", "Recarga (5)", "Duas Mãos"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Lançador de Cerco de Spica",
+      descricao: "Linha de armamento de defesa de posição. A estrela Spica como nome industrial sinaliza arma confiável de longo uso em cenários de cerco prolongado."
+    },
+    {
+      povo: "Biowl",
+      nome: 'Série GLN-2 "Sequência"',
+      descricao: "O apelido vem da prática operacional comum: operadores carregam o tubo com cinco granadas em sequência específica — fumaça primeiro, fragmentação em seguida, fumaça novamente para retirada — e a arma foi calibrada para troca rápida entre tipos. A linha _GLN-2_ é uma das mais bem distribuídas em frotas Biowl ainda ativas."
+    }
+  ]}
+>
+  Tubo grosso de cano curto, calibrado para receber e disparar granadas a longa distância. A arma não causa dano por si só — cada granada possui uma configuração diferente. Operadores frequentemente carregam consigo uma variedade de granadas, trocando rapidamente conforme a situação tática.
+</Arma>
+
+### Lançador de Mísseis
+
+<Arma
+  equivalencia="Missile Launcher"
+  dano="3d8 fogo + 2d8 contundente"
+  maestria="Push"
+  propriedades={["Munição (Míssil)", "Recarga (1)", "Duas Mãos", "Pesada", "Salvaguarda de Destreza CD 15", "Raio 3m", "Munição (60/180)", "Alcance mínimo 18m"]}
+  fabricantes={[
+    {
+      povo: "Anões da Poeira Estelar",
+      nome: "Lançador de Cerco de Eta Carinae",
+      descricao: "O nome carrega peso simbólico de potência iminente prestes a se descarregar. A versão Anã é considerada padrão histórico. Todos os outros Lançadores de Mísseis são variações do design Anão."
+    },
+    {
+      povo: "Aesir",
+      nome: "Eldskotr",
+      traducao: "Tiro de Fogo",
+      descricao: "Adotado pelos Aesir das frotas de guerra antigas para abertura de cerco contra inimigo entrincheirado em estação ou em nave grande. A tradição Aesir prescreve que o disparo de _Eldskotr_ seja anunciado com gritos cerimoniais antes do tiro — não para intimidar inimigos, mas para alertar aliados. A onda de choque é grande o suficiente para ferir aliados próximos demais ao ponto de impacto, e o aviso é proteção mútua."
+    }
+  ]}
+>
+  Tubo longo de cano largo, montado em plataforma de ombro. Dispara mísseis autopropulsionados de longo alcance, com sensor de proximidade que aciona a espoleta a partir de uma distância mínima de segurança. A explosão cobre área ampla, projetada para devastar formação inimiga concentrada ou alvo grande estacionário.
+
+  Arma de **comandante** ou **achado raríssimo**. Restam poucas funcionando no universo conhecido, e cada míssil custa o que um soldado comum ganha em meses.
+
+  **Alcance Mínimo:** Disparos contra alvos a menos de 18 metros resultam em **falha de espoleta** — o míssil sai do tubo mas não detona. O projétil inerte ainda atinge fisicamente o alvo (1d6 de dano contundente), mas a explosão completa é perdida e o míssil é consumido.
+</Arma>
