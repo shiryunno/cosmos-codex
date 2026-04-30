@@ -43,6 +43,7 @@ export default defineConfig({
 					label: 'Equipamento',
 					items: [
 						{ label: 'Visão geral', link: 'equipamento' },
+						{ label: 'Munição Especializada', link: 'equipamento/municao' },
 						{
 							label: 'Armaduras',
 							items: [

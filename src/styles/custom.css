@@ -1,3 +1,28 @@
+/* ─── Layout — larguras ─────────────────────────────────────────────────── */
+
+:root {
+	/* Conteúdo central mais largo (padrão Starlight: ~45rem) */
+	--sl-content-width: 40rem;
+}
+
+/* Sidebar direita (Nessa página) mais estreita — reduz a coluna do grid */
+@media (min-width: 72rem) {
+	:root {
+		--sl-content-width: 46rem;
+	}
+
+	.page {
+		grid-template-columns: var(--sl-sidebar-width) 1fr 14rem;
+	}
+
+}
+
+@media (min-width: 1420px) {
+	:root {
+		--sl-content-width: 58rem;
+	}
+}
+
 /* ─── Tipografia ────────────────────────────────────────────────────────── */
 
 :root {
