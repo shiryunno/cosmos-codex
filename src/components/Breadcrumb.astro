@@ -1,0 +1,100 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+const LABELS: Record<string, string> = {
+	racas: 'Raças',
+	mechas: 'Mechas',
+	chassis: 'Chassis',
+	bracos: 'Braços',
+	costas: 'Costas',
+	pernas: 'Pernas',
+	geracao: 'Geração',
+	naves: 'Naves',
+	classes: 'Classes',
+	modulos: 'Módulos',
+	equipamento: 'Equipamento',
+	armaduras: 'Armaduras',
+	armas: 'Armas',
+};
+
+const BASE = '/cosmos-codex';
+const slug = Astro.url.pathname.replace(BASE, '').replace(/^\/|\/$/g, '');
+const segments = slug.split('/').filter(Boolean);
+
+type Crumb = { label: string; href?: string; current: boolean };
+
+const crumbs: Crumb[] = [{ label: 'Início', href: `${BASE}/`, current: false }];
+
+for (let i = 0; i < segments.length - 1; i++) {
+	crumbs.push({
+		label: LABELS[segments[i]] ?? segments[i],
+		href: `${BASE}/${segments.slice(0, i + 1).join('/')}/`,
+		current: false,
+	});
+}
+
+if (segments.length > 0) {
+	crumbs.push({ label: title, current: true });
+}
+---
+
+{crumbs.length > 1 && (
+	<nav class="breadcrumb" aria-label="Caminho de navegação">
+		<ol>
+			{crumbs.map((crumb, i) => (
+				<li>
+					{i > 0 && <span class="sep" aria-hidden="true">›</span>}
+					{crumb.current
+						? <span aria-current="page">{crumb.label}</span>
+						: <a href={crumb.href}>{crumb.label}</a>
+					}
+				</li>
+			))}
+		</ol>
+	</nav>
+)}
+
+<style>
+	.breadcrumb {
+		margin-bottom: 0.75rem;
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.2rem 0;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		font-size: 0.8rem;
+	}
+
+	.breadcrumb li {
+		display: flex;
+		align-items: center;
+		gap: 0.35rem;
+	}
+
+	.breadcrumb a {
+		color: var(--sl-color-gray-3);
+		text-decoration: none;
+		transition: color 0.15s;
+	}
+
+	.breadcrumb a:hover {
+		color: var(--sl-color-accent);
+	}
+
+	.breadcrumb span[aria-current] {
+		color: var(--sl-color-gray-2);
+	}
+
+	.sep {
+		color: var(--sl-color-gray-5);
+	}
+</style>

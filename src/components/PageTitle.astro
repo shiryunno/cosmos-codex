@@ -1,0 +1,9 @@
+---
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+import Breadcrumb from './Breadcrumb.astro';
+
+const title = Astro.locals.starlightRoute.entry.data.title;
+---
+
+<Breadcrumb title={title} />
+<Default {...Astro.props}><slot /></Default>

@@ -18,34 +18,39 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Raças',
+					collapsed: true,
 					autogenerate: { directory: 'racas' },
 				},
 				{
 					label: 'Mechas',
+					collapsed: true,
 					items: [
 						{ label: 'Visão geral', link: 'mechas' },
-						{ label: 'Chassis', autogenerate: { directory: 'mechas/chassis' } },
-						{ label: 'Braços', autogenerate: { directory: 'mechas/bracos' } },
-						{ label: 'Costas', autogenerate: { directory: 'mechas/costas' } },
-						{ label: 'Pernas', autogenerate: { directory: 'mechas/pernas' } },
-						{ label: 'Geração', autogenerate: { directory: 'mechas/geracao' } },
+						{ label: 'Chassis', collapsed: true, autogenerate: { directory: 'mechas/chassis' } },
+						{ label: 'Braços', collapsed: true, autogenerate: { directory: 'mechas/bracos' } },
+						{ label: 'Costas', collapsed: true, autogenerate: { directory: 'mechas/costas' } },
+						{ label: 'Pernas', collapsed: true, autogenerate: { directory: 'mechas/pernas' } },
+						{ label: 'Geração', collapsed: true, autogenerate: { directory: 'mechas/geracao' } },
 					],
 				},
 				{
 					label: 'Naves',
+					collapsed: true,
 					items: [
 						{ label: 'Visão geral', link: 'naves' },
-						{ label: 'Classes', autogenerate: { directory: 'naves/classes' } },
-						{ label: 'Módulos', autogenerate: { directory: 'naves/modulos' } },
+						{ label: 'Classes', collapsed: true, autogenerate: { directory: 'naves/classes' } },
+						{ label: 'Módulos', collapsed: true, autogenerate: { directory: 'naves/modulos' } },
 					],
 				},
 				{
 					label: 'Equipamento',
+					collapsed: true,
 					items: [
 						{ label: 'Visão geral', link: 'equipamento' },
 						{ label: 'Munição Especializada', link: 'equipamento/municao' },
 						{
 							label: 'Armaduras',
+							collapsed: true,
 							items: [
 								{ label: 'Armaduras Leves', link: 'equipamento/armaduras/leves' },
 								{ label: 'Armaduras Médias', link: 'equipamento/armaduras/medias' },
@@ -55,11 +60,15 @@ export default defineConfig({
 						},
 						{
 							label: 'Armas',
+							collapsed: true,
 							autogenerate: { directory: 'equipamento/armas' },
 						},
 					],
 				},
 			],
+			components: {
+				PageTitle: './src/components/PageTitle.astro',
+			},
 			customCss: ['./src/styles/custom.css', './src/styles/global.css'],
 			head: [
 				{
