@@ -63,6 +63,13 @@ export default defineConfig({
 							collapsed: true,
 							autogenerate: { directory: 'equipamento/armas' },
 						},
+						{
+							label: 'Sobrevivência',
+							collapsed: true,
+							items: [
+								{ label: 'Consumíveis', link: 'equipamento/sobrevivencia/consumiveis' },
+							],
+						},
 					],
 				},
 			],
