@@ -68,6 +68,8 @@ export default defineConfig({
 							collapsed: true,
 							items: [
 								{ label: 'Consumíveis', link: 'equipamento/sobrevivencia/consumiveis' },
+								{ label: 'Equipamento Ambiental', link: 'equipamento/sobrevivencia/ambiental' },
+								{ label: 'Instrumentos Operacionais', link: 'equipamento/sobrevivencia/operacionais' },
 							],
 						},
 					],
